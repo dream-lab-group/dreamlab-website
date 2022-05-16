@@ -1,8 +1,21 @@
 import Button from '@mui/material/Button'
+import Image from 'next/image'
 
+import application from '../assets/application.png'
+/* import bgAbout from '../assets/bg-about.png'
+ */
 function Agentur() {
   return (
     <section id="agentur" className="content">
+      <div className="application">
+        <Image
+          src={application}
+          /* layout="responsive" */
+          width={500}
+          height={347.99}
+          alt="Image Application"
+        />
+      </div>
       <div className="upperpartText">
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</h1>
         <p>
@@ -39,6 +52,9 @@ function Agentur() {
           Kontakt
         </Button>
       </div>
+{/*       <div className="bgabout">
+        <Image src={bgAbout} layout="responsive" alt="Image Application" />
+      </div> */}
       <div className="lowerpartText">
         <h1>Warum dream lab</h1>
         <p>

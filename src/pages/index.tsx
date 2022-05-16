@@ -3,11 +3,11 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 /* Components */
-import Navigation from './Components/Navigation'
-import Agentur from './Components/Agentur'
-import Projekt from './Components/Projekt'
-import Team from './Components/Team'
-import Kontakt from './Components/Kontakt'
+import Navigation from '../components/Navigation'
+import Agentur from '../components/Agentur'
+import Projekt from '../components/Projekt'
+import Team from '../components/Team'
+import Kontakt from '../components/Kontakt'
 
 const Home: NextPage = () => {
   return (

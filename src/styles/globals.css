@@ -5,6 +5,7 @@ body {
   font-family: 'Outfit', sans-serif;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -18,28 +19,47 @@ a {
 
 /* Navigstion Bar */
 .bar {
-      width: 100%;
-      height: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
 }
 
 .logo {
-      height: 3rem;
-      width: 6rem;
-      background-color: beige;
+  margin-left: 2rem;
 }
 
 .mainNav {
-      display: flex;
+  display: flex;
 }
 
 .mainNav li {
-      list-style-type: none;
-      padding-right: 2rem;
+  list-style-type: none;
+  padding-right: 2rem;
 }
 
 .buttonContainer {
-      width: auto;
+  width: auto;
+}
+
+#agentur {
+  position: relative;
+  margin-top: 6rem;
+}
+
+.upperpartText {
+  width: 55%;
+}
+
+.application {
+  position: absolute;
+  right: -2rem;
+  top: -4rem;
+  z-index: -1;
+}
+
+.lowerpartText {
+  margin-top: 15rem;
 }

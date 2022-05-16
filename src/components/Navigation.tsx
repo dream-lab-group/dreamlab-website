@@ -2,12 +2,14 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import logo from '../assets/dreamlab-logo.png'
+
 function Navigation() {
   return (
     <div className="bar">
       <div className="logo">
-{/*         <Image src="" alt="Logo dream lab" width={500} height={500} />
- */}      </div>
+        <Image src={logo}  width={152} height={49} alt="dream lab Logo" /> {/* layout="responsive" funktioniert nicht? */}
+      </div>
       <nav>
         <ul className="mainNav">
           {/* Agentur */}
