@@ -5,7 +5,7 @@ body {
   font-family: 'Outfit', sans-serif;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -40,26 +40,20 @@ a {
   padding-right: 2rem;
 }
 
-.buttonContainer {
-  width: auto;
-}
+/* Agentur */
 
-#agentur {
-  position: relative;
-  margin-top: 6rem;
-}
+/* .lowerpartText {
+  margin-top: 15rem;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 50%;
+  color: white;
+} */
 
-.upperpartText {
-  width: 55%;
-}
-
-.application {
+.bgabout {
   position: absolute;
   right: -2rem;
-  top: -4rem;
-  z-index: -1;
-}
-
-.lowerpartText {
-  margin-top: 15rem;
+  width: 100vw;
+  z-index: -2;
 }
