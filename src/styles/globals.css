@@ -40,20 +40,15 @@ a {
   padding-right: 2rem;
 }
 
-/* Agentur */
+.polygon {
+      clip-path: polygon(100% 21%, 100% 73%, 0 68%, 0 25%);
+}
 
-/* .lowerpartText {
-  margin-top: 15rem;
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  width: 50%;
-  color: white;
-} */
+.polygonsmall {
+      clip-path: polygon(100% 0, 100% 56%, 0 49%, 0 0);
+}
 
-.bgabout {
-  position: absolute;
-  right: -2rem;
-  width: 100vw;
-  z-index: -2;
+.teamPoly {
+      clip-path: polygon(100% 51%, 100% 100%, 0 100%, 0 45%);
+      z-index: -4;
 }

@@ -11,7 +11,7 @@ import Kontakt from '../components/Kontakt'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container} >
+    <div>
       <Head>
         {/* Title */}
         <title>dream lab</title>
@@ -22,13 +22,16 @@ const Home: NextPage = () => {
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       {/* Navigation */}
       <Navigation />
       {/* Components Content */}
-      <Agentur />
-{/*       <Projekt />
-      <Team />
-      <Kontakt />
+      <div style={{ position: 'relative' }}>
+        <Agentur />
+        <Team />
+      </div>
+      {/*        <Projekt /> */}
+      {/*     <Kontakt />
 
       <footer className={styles.footer}></footer> */}
     </div>
