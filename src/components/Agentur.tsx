@@ -1,6 +1,6 @@
-import Button from '@mui/material/Button'
-import { Box, CardMedia, useMediaQuery, useTheme } from '@mui/material'
+import { Box, CardMedia, useMediaQuery, useTheme, Button } from '@mui/material'
 import Image from 'next/image'
+import Link from 'next/link'
 
 /* Assets */
 import application from '../assets/application.png'
@@ -16,7 +16,11 @@ function Agentur() {
   const xlBreakpointUp = useMediaQuery(theme.breakpoints.up('xl'))
 
   return (
-    <Box sx={{ margin: '4rem 0 4rem 0' }}>
+    <Box
+      id="agentur"
+      sx={{ margin: `${smBreakpointUp ? '4rem 0 4rem 0' : 0}` }}
+    >
+      {' '}
       {/* Agentur - Top Part */}
       <Box>
         {smBreakpointUp ? (
@@ -74,6 +78,7 @@ function Agentur() {
                 src={applicationFull}
                 layout="fill"
                 objectFit="fill"
+                priority
                 alt="Image Application"
               />
             </Box>
@@ -85,7 +90,7 @@ function Agentur() {
             width: `${smBreakpointUp ? '35%' : '75%'}`,
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'left',
+            alignItems: 'flex-start',
             marginLeft: '10%',
             fontSize: `${smBreakpointUp ? '14px' : '18px'}`,
             paddingTop: `${smBreakpointUp ? '0' : '25rem'}`,
@@ -101,14 +106,14 @@ function Agentur() {
           <Box
             sx={{
               display: 'flex',
-              alignItems: 'left',
+              alignItems: 'flex-start',
               marginTop: '1rem',
               flexDirection: 'row',
             }}
           >
             <Button
               variant="contained"
-              href="/#team"
+              href="#team"
               sx={{
                 width: '140px',
                 height: '45px',
@@ -121,7 +126,7 @@ function Agentur() {
             </Button>
             <Button
               variant="contained"
-              href="/#team"
+              href="#team"
               sx={{
                 width: '140px',
                 height: '45px',
@@ -140,7 +145,6 @@ function Agentur() {
           </Box>
         </Box>
       </Box>
-
       {/* Agentur - Middle Part */}
       <Box
         sx={{
@@ -468,9 +472,7 @@ function Agentur() {
             color: 'white',
             width: `${mdBreakpointDown ? '18rem' : '28rem'}`,
             position: 'absolute',
-            left: `${
-              smBreakpointDown ? '5%' : lgBreakpointUp ? '50%' : '50%'
-            }`,
+            left: `${smBreakpointDown ? '5%' : lgBreakpointUp ? '50%' : '50%'}`,
             top: '55%',
           }}
         >
@@ -483,7 +485,6 @@ function Agentur() {
           </p>
         </Box>
       </Box>
-
       {/* Agentur - Bottom Part */}
       <Box
         sx={{
@@ -495,7 +496,7 @@ function Agentur() {
       >
         <Box>
           {/* Why Iframe: https://smartdevpreneur.com/four-examples-of-material-ui-cardmedia/ */}
-          <CardMedia
+          {/*         <CardMedia
             component="iframe"
             style={{
               height: `${
@@ -527,9 +528,14 @@ function Agentur() {
               borderTopRightRadius: `${mdBreakpointDown ? '43px' : '0'}`,
             }}
             image="https://www.youtube.com/embed/muuK4SpRR5M"
-          />
+          /> */}
         </Box>
-        <Box sx={{ width: `${smBreakpointDown ? "18rem" : "33rem"}`, margin: '5rem 5rem 0 5rem' }}>
+        <Box
+          sx={{
+            width: `${smBreakpointDown ? '18rem' : '33rem'}`,
+            margin: '5rem 5rem 0 5rem',
+          }}
+        >
           <h1>Wir entwickeln individuelle Studenten Plattformen für Schulen</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -537,9 +543,9 @@ function Agentur() {
             minim veniam, quis nostrud exercitation laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <a href="" style={{ color: '#BC27F6' }}>
-            mehr erfahren
-          </a>
+          <Link href="/projekt">
+            <p style={{ color: '#BC27F6' }}>mehr erfahren</p>
+          </Link>
         </Box>
       </Box>
     </Box>

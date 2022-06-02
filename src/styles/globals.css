@@ -14,30 +14,7 @@ a {
 }
 
 * {
-  box-sizing: border-box;
-}
-
-/* Navigstion Bar */
-.bar {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 4rem;
-}
-
-.logo {
-  margin-left: 2rem;
-}
-
-.mainNav {
-  display: flex;
-}
-
-.mainNav li {
-  list-style-type: none;
-  padding-right: 2rem;
+  box-sizing: border-box ;
 }
 
 .polygon {
@@ -50,5 +27,8 @@ a {
 
 .teamPoly {
       clip-path: polygon(100% 51%, 100% 100%, 0 100%, 0 45%);
-      z-index: -4;
+}
+
+.polygonProject {
+      clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
 }

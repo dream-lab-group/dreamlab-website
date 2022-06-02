@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./public/dreamlab-logo.png" alt="Dream Lab Agenvy" width="400" />
+  <img src="./public/dreamlab-logo.png" alt="Dream Lab Agency" width="400" />
 
 &#xa0;
 

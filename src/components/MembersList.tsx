@@ -19,43 +19,43 @@ const Members = () => {
     },
     {
       key: 2,
-      image: '/assets/nikola.png',
+      image: '/assets/hadrian.png',
       name: 'Hadrian Chio',
       role: 'Web Developer',
     },
     {
       key: 3,
-      image: '/assets/nikola.png',
+      image: '/assets/michel.png',
       name: 'Michel Weber',
       role: 'VFX Artist',
     },
     {
       key: 4,
-      image: '/assets/nikola.png',
+      image: '/assets/jasmin.png',
       name: 'Jasmin Fischli',
       role: 'Web Designer',
     },
     {
       key: 5,
-      image: '/assets/nikola.png',
+      image: '/assets/claudio.png',
       name: 'Claudio Mühle',
       role: 'Film Producer',
     },
     {
       key: 6,
-      image: '/assets/nikola.png',
+      image: '/assets/sarah.png',
       name: 'Sarah Candolfi',
       role: 'Web Developer',
     },
     {
       key: 7,
-      image: '/assets/nikola.png',
+      image: '/assets/manu.png',
       name: 'Manuela Pfister',
       role: 'VFX Artist',
     },
     {
       key: 8,
-      image: '/assets/nikola.png',
+      image: '/assets/fiona.png',
       name: 'Fiona Hilpertshauser',
       role: 'Web Designer',
     },
@@ -67,7 +67,9 @@ const Members = () => {
 
   return (
     <Grid
-      container /*      columns={4} */
+      container
+
+      /*      columns={4} */
       /*       width="100%"
       maxWidth="2290px" */
       /*       paddingY="40px"
@@ -78,26 +80,46 @@ const Members = () => {
        */
     >
       {data.map((member) => (
-        <Grid item md={3} xs={8} sm={6} key={member.key}>
-          {/*           <Image
-            src={member.image}
-            layout="fill"
-            objectFit="fill"
-            alt="Image Application"
-          /> */}
-          <Box
+        <Grid item container md={3} xs={8} sm={4} key={member.key} direction="column">
+          <Grid item position="relative" height={100} width={100}>
+            <Image src={member.image} alt="Image Application" layout="fill" />
+          </Grid>
+          <Grid item>
+            <p style={{ fontWeight: 'bold' }}>{member.name}</p>
+            <p>{member.role}</p>
+          </Grid>
+          {/* Has to be the Image, height and width already set!!! */}
+          {/*           <Box
             sx={{
               height: `${
-                  lgBreakpointUp ? '16rem' : smBreakpointUp ? '10.75rem' : '9.75rem'
-                }`,
+                lgBreakpointUp
+                  ? '14rem'
+                  : mdBreakpointUp
+                  ? '11rem'
+                  : smBreakpointDown
+                  ? '12rem'
+                  : '9rem'
+              }`,
               width: `${
-                lgBreakpointUp ? '16rem' : smBreakpointUp ? '11.06rem' : '10.3rem'
+                lgBreakpointUp
+                  ? '14rem'
+                  : mdBreakpointUp
+                  ? '11rem'
+                  : smBreakpointDown
+                  ? '12rem'
+                  : '9rem'
               }`,
               border: 'solid 2px black',
-            }} 
-          ></Box>
-          <p style={{ fontWeight: 'bold' }}>{member.name}</p>
-          <p>{member.role}</p>
+            }}
+          > */}
+          {/*             <Image
+              src={member.image}
+              layout="fill"
+              objectFit="fill"
+              alt="Image Application"
+             /> */}
+          {/*           </Box>
+           */}{' '}
         </Grid>
       ))}
     </Grid>

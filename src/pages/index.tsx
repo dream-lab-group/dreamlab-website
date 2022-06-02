@@ -1,13 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 /* Components */
 import Navigation from '../components/Navigation'
 import Agentur from '../components/Agentur'
-import Projekt from '../components/Projekt'
 import Team from '../components/Team'
 import Kontakt from '../components/Kontakt'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -26,14 +25,11 @@ const Home: NextPage = () => {
       {/* Navigation */}
       <Navigation />
       {/* Components Content */}
-      <div style={{ position: 'relative' }}>
-        <Agentur />
-        <Team />
-      </div>
-      {/*        <Projekt /> */}
-      {/*     <Kontakt />
-
-      <footer className={styles.footer}></footer> */}
+      <Agentur />
+      <Team />
+      <Kontakt />
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }

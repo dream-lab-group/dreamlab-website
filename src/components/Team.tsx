@@ -14,106 +14,101 @@ function Team() {
 
   return (
     <Box
+      id="team"
       sx={{
         position: 'relative',
-/*         height: `${
-          xlBreakpointUp
-            ? '70rem'
-            : lgBreakpointUp
-            ? '60rem'
-            : mdBreakpointUp
-            ? '40rem'
-            : smBreakpointUp
-            ? '42rem'
-            : '42rem'
-        }`, */
+        height: `${
+          mdBreakpointUp ? '50rem' : smBreakpointUp ? '60rem' : '150rem'
+        }`,
+        background: `${mdBreakpointDown ? "#F8F8F8" :  "none" }`
       }}
     >
+      {/* Polygon */}
       <Box
+        /*         className={lgBreakpointUp ? "teamPoly" :  "mediumTeamPoly"}
+         */
         className="teamPoly"
         sx={{
           /* height: '95rem', */
           height: `${
             lgBreakpointDown
               ? '100rem'
-              :  mdBreakpointDown
+              : mdBreakpointDown
               ? '120rem'
               : smBreakpointDown
-              ? '140rem'
-              :
-                '95rem'
+              ? '500rem'
+              : '95rem'
           }`,
           width: '100%',
-          background: '#F8F8F8',
+          zIndex: -4,
+          background: '#F8F8F8 ',
           position: 'absolute',
-          top: '-40rem',
+          top: '-45rem', /* Distance to upper div */
         }}
-      >
-        {lgBreakpointUp ? (
-          <p
-            style={{
-              fontWeight: 700,
-              fontSize: '13.6rem',
-              lineHeight: '24px',
-              color: '#EEEEEE',
-              letterSpacing: '7.46px',
-              transform: 'rotate(-90deg)',
-              position: 'absolute',
-              left: '-16rem',
-              bottom: '10rem',
-            }}
-          >
-            TEAM
-          </p>
-        ) : (
-            <p
-              style={{
-                fontWeight: 700,
-                fontSize: '6.25rem',
-                lineHeight: '24px',
-                color: '#EEEEEE',
-                letterSpacing: '7.46px',
-                transform: 'rotate(-0deg)',
-                position: 'absolute',
-                right: '3rem',
-                bottom: '32rem',
-                display: `${smBreakpointDown ? "none" : "block"}`
-              }}
-            >
-              TEAM
-            </p>
-        )}
-        {/* Content */}
-        <Box
-          sx={{
+      />
+      {/* Team Text */}
+      {lgBreakpointUp ? (
+        <p
+          style={{
+            fontWeight: 700,
+            fontSize: '13.6rem',
+            lineHeight: '24px',
+            color: '#EEEEEE',
+            letterSpacing: '7.46px',
+            transform: 'rotate(-90deg)',
             position: 'absolute',
-            /* top: '47rem', */
-            top: `${
-              lgBreakpointDown
-                ? '60rem'
-                : /*               : mdBreakpointUp
-                  ? '40rem'
-                  : smBreakpointUp
-                  ? '42rem' */
-                  '47rem'
-            }`,
-            /*             left: '11rem',
-             */ left: `${
-              lgBreakpointDown
-                ? '5rem'
-                : /*               : mdBreakpointUp
-                  ? '40rem'
-                  : smBreakpointUp
-                  ? '42rem' */
-                  '11rem'
-            }`,
+            left: '-16rem',
+            bottom: '10rem',
           }}
         >
-          <p style={{ fontSize: '18px', fontWeight: 'bold' }}>
-            Aufgestellt und motiviert
-          </p>
-          <Members />
-        </Box>
+          TEAM
+        </p>
+      ) : mdBreakpointUp ? (
+        <p
+          style={{
+            fontWeight: 700,
+            fontSize: '6.25rem',
+            lineHeight: '24px',
+            color: '#EEEEEE',
+            letterSpacing: '7.46px',
+            transform: 'rotate(-0deg)',
+            position: 'absolute',
+            right: '3rem',
+            bottom: '32rem',
+          }}
+        >
+          TEAM
+        </p>
+      ) : (
+        <p
+          style={{
+            fontWeight: 700,
+            fontSize: '6.25rem',
+            lineHeight: '24px',
+            color: '#EEEEEE',
+            letterSpacing: '7.46px',
+            transform: 'rotate(-0deg)',
+            position: 'absolute',
+            right: '3rem',
+            bottom: '45rem',
+            display: `${smBreakpointDown ? 'none' : 'block'}`,
+          }}
+        >
+          TEAM
+        </p>
+      )}
+      {/* Content */}
+      <Box
+        sx={{
+          position: 'absolute',
+          top: `${lgBreakpointUp ? '2rem' : smBreakpointUp ? '12rem' : '2rem'}`,
+          left: `${lgBreakpointUp ? '11rem' : smBreakpointUp ? '5rem' : '25%'}`,
+        }}
+      >
+        <p style={{ fontSize: '18px', fontWeight: 'bold' }}>
+          Aufgestellt und motiviert
+        </p>
+        <Members />
       </Box>
     </Box>
   )
