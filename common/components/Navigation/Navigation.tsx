@@ -16,13 +16,15 @@ function Navigation() {
   const smBreakpointUp = useMediaQuery(theme.breakpoints.up('sm'))
 
   const [hamburgerOpen, setHamburgerOpen] = useState(false)
+
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen)
   }
 
-  const liStyle = {
-    listStyleType: 'none',
-    paddingRight: '2rem',
+  if (hamburgerOpen === true) {
+    document.documentElement.style.overflow = 'hidden'
+  } else {
+    document.documentElement.style.overflow = 'scroll'
   }
 
   return (
@@ -78,13 +80,21 @@ function Navigation() {
           >
             <Box
               component="button"
-              sx={{ padding: '1rem', border: 'none', background: 'none' }}
+              sx={{ border: 'none', background: 'none', padding: '0.3rem' }}
               onClick={toggleHamburger}
             >
               {hamburgerOpen ? (
-                <FontAwesomeIcon icon={faXmark} style={{ cursor: 'pointer' }} />
+                <FontAwesomeIcon
+                  icon={faXmark}
+                  size="2x"
+                  style={{ cursor: 'pointer' }}
+                />
               ) : (
-                <FontAwesomeIcon icon={faBars} style={{ cursor: 'pointer' }} />
+                <FontAwesomeIcon
+                  icon={faBars}
+                  size="2x"
+                  style={{ cursor: 'pointer' }}
+                />
               )}
             </Box>
           </Box>
@@ -103,7 +113,10 @@ function Navigation() {
               }}
             >
               {Globals.navigationElements.map((navElement) => (
-                <MobileNavigationButton navElement={navElement} />
+                <MobileNavigationButton
+                  navElement={navElement}
+                  setHamburgerOpen={setHamburgerOpen}
+                />
               ))}
             </Box>
           )}

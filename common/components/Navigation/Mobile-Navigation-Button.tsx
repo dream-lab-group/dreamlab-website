@@ -1,13 +1,20 @@
 import { ButtonBase, Typography } from '@mui/material'
 import Link from 'next/link'
+import React from 'react'
 
 type MobileNavigationButtonProps = {
   navElement: string
+  setHamburgerOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const MobileNavigationButton = ({
   navElement,
+  setHamburgerOpen,
 }: MobileNavigationButtonProps) => {
+  const handleOnButtonClick = () => {
+    setHamburgerOpen(false)
+  }
+
   return (
     <>
       <ButtonBase
@@ -19,7 +26,9 @@ export const MobileNavigationButton = ({
           width: '100%',
           display: 'flex',
           alignItems: 'center',
+          marginBottom: '2rem',
         }}
+        onClick={handleOnButtonClick}
       >
         <Link
           href={`${
@@ -37,8 +46,6 @@ export const MobileNavigationButton = ({
               paddingRight: '2em',
               fontSize: '1.5rem',
               width: '100%',
-              display: 'flex',
-              justifyContent: 'center',
             }}
           >
             {navElement}

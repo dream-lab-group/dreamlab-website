@@ -21,6 +21,7 @@ function Team() {
           mdBreakpointUp ? '50rem' : smBreakpointUp ? '60rem' : '195rem'
         }`,
         background: `${mdBreakpointDown ? '#F8F8F8' : 'none'}`,
+        width: '100%',
       }}
     >
       {/* Polygon */}
@@ -134,7 +135,13 @@ function Team() {
             width: '100%',
           }}
         >
-          <p style={{ fontSize: '18px', fontWeight: 'bold', marginTop: `${smBreakpointDown ? "3rem" : "0"}` }}>
+          <p
+            style={{
+              fontSize: '18px',
+              fontWeight: 'bold',
+              marginTop: `${smBreakpointDown ? '3rem' : '0'}`,
+            }}
+          >
             Aufgestellt und motiviert
           </p>
           <Members />

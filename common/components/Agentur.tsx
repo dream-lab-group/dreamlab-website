@@ -20,7 +20,7 @@ function Agentur() {
   return (
     <Box
       id="agentur"
-      sx={{ margin: `${smBreakpointUp ? '4rem 0 4rem 0' : 0}` }}
+      sx={{ margin: `${smBreakpointUp ? '4rem 0 4rem 0' : 0}`, width: '100%' }}
     >
       {/* Agentur - Top Part */}
       <Box

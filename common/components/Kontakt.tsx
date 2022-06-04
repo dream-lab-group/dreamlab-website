@@ -28,11 +28,14 @@ function Kontakt() {
         alignContent: 'space-between',
         flexDirection: `${lgBreakpointUp ? 'row' : 'column'}`,
         padding: '0 5rem 0 5rem',
+        width: '100%',
       }}
     >
       <Box
         sx={{
-          width: `${lgBreakpointUp ? '30%' : smBreakpointDown ? "140%" : '100%'}`,
+          width: `${
+            lgBreakpointUp ? '30%' : smBreakpointDown ? '140%' : '100%'
+          }`,
           margin: `${lgBreakpointUp ? '0 4rem 0 0' : '0 0 4rem 0'}`,
         }}
       >
@@ -52,7 +55,11 @@ function Kontakt() {
               mdBreakpointUp ? '23rem' : smBreakpointUp ? '30rem' : '28rem'
             }`,
             width: `${
-              mdBreakpointUp ? '42rem' : smBreakpointUp ? '35rem' /* ? xsBreakpointUp : "50rem"  */: '21rem'
+              mdBreakpointUp
+                ? '42rem'
+                : smBreakpointUp
+                ? '35rem' /* ? xsBreakpointUp : "50rem"  */
+                : '21rem'
             }`,
             borderRadius: '1.25rem',
             display: 'flex',
