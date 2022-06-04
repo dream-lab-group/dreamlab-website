@@ -1,7 +1,7 @@
 import { Box } from '@mui/material'
 import Head from 'next/head'
 import Footer from './Footer'
-import Navigation from './Navigation'
+import Navigation from './Navigation/Navigation'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (

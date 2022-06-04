@@ -1,3 +1,4 @@
+import { Box } from '@mui/material'
 import type { NextPage } from 'next'
 import { ReactElement } from 'react'
 import Agentur from '../common/components/Agentur'
@@ -9,12 +10,12 @@ import Team from '../common/components/Team'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       {/* Components Content */}
       <Agentur />
       <Team />
       <Kontakt />
-    </div>
+    </>
   )
 }
 

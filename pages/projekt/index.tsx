@@ -8,9 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import application from '../assets/application.png'
 
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import Navigation from '../../common/components/Navigation'
 import Kontakt from '../../common/components/Kontakt'
-import Footer from '../../common/components/Footer'
 import Layout from '../../common/components/Layout'
 
 function Projekt() {
