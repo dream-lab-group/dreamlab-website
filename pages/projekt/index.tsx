@@ -5,12 +5,12 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 /* Assets */
-import Navigation from '../components/Navigation'
-import Kontakt from '../components/Kontakt'
-import Footer from '../components/Footer'
 import application from '../assets/application.png'
 
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import Navigation from '../../common/components/Navigation'
+import Kontakt from '../../common/components/Kontakt'
+import Footer from '../../common/components/Footer'
 
 function Projekt() {
   const theme = useTheme()
@@ -31,16 +31,15 @@ function Projekt() {
   return (
     <>
       <Box>
-        <Navigation />
-        <Box sx={{overflow:"hidden"}}>
+        <Box sx={{ overflow: 'hidden' }}>
           {/* Upper Part */}
           <Box
             sx={{
               height: '35rem',
-              width:"100%",
+              width: '100%',
               display: 'flex',
-/*               justifyContent: 'space-around',
- */              alignItems: 'center',
+              /*               justifyContent: 'space-around',
+               */ alignItems: 'center',
               justifyContent: `${mdBreakpointUp ? 'space-around' : 'center'}`,
               flexDirection: `${smBreakpointUp ? 'row' : 'row-reverse'}`,
               position: 'relative',
@@ -738,8 +737,8 @@ function Projekt() {
                           position: 'absolute',
                           top: '-2rem',
                           border: '18px solid #D770FF',
-                          height: "6rem",
-                          width: "6rem",
+                          height: '6rem',
+                          width: '6rem',
                           borderRadius: '50%',
                           background: 'white',
                         }}
@@ -2653,9 +2652,6 @@ function Projekt() {
           </Box>
         )}
         <Kontakt />
-
-        {/* Footer */}
-        <Footer />
       </Box>
     </>
   )
