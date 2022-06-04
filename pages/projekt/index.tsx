@@ -11,6 +11,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import Navigation from '../../common/components/Navigation'
 import Kontakt from '../../common/components/Kontakt'
 import Footer from '../../common/components/Footer'
+import Layout from '../../common/components/Layout'
 
 function Projekt() {
   const theme = useTheme()
@@ -677,7 +678,7 @@ function Projekt() {
                 border: 'none',
                 borderRadius: `${mdBreakpointDown ? '30px' : '43px'}`,
               }}
-              image="https://www.youtube.com/embed/muuK4SpRR5M"
+              // image="https://www.youtube.com/embed/muuK4SpRR5M"
             />
           </Box>
           {/* Prices */}
@@ -2655,6 +2656,11 @@ function Projekt() {
       </Box>
     </>
   )
+}
+
+// @ts-expect-error: Todo
+Projekt.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>
 }
 
 export default Projekt

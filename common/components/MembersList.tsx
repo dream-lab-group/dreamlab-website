@@ -72,7 +72,7 @@ const Members = () => {
           }}
         >
           {data.map((member) => (
-            <Grid container item md={1} key={1}>
+            <Grid container item md={1} key={member.key}>
               <Grid item>
                 <Grid
                   position="relative"
@@ -96,7 +96,7 @@ const Members = () => {
       ) : mdBreakpointUp ? (
         <Grid container>
           {data.map((member) => (
-            <Grid container item md={3} key={1}>
+            <Grid container item md={3} key={member.key}>
               <Grid item>
                 <Grid
                   position="relative"
@@ -120,7 +120,7 @@ const Members = () => {
       ) : (
         <Grid container>
           {data.map((member) => (
-            <Grid container item sm={4} key={1}>
+            <Grid container item sm={4} key={member.key}>
               <Grid item>
                 <Grid
                   position="relative"

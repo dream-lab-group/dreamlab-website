@@ -25,18 +25,10 @@ function Agentur() {
       {/* Agentur - Top Part */}
       <Box
         sx={{
-            display: `${
-                  smBreakpointUp ? 'block' : "flex"
-                }`,
-            justifyContent: `${
-                  smBreakpointUp ? 'block' : "center"
-                }`,
-                flexDirection: `${
-                  smBreakpointUp ? 'block' : "column"
-                }`,
-                alignItems: `${
-                  smBreakpointUp ? 'block' : "center"
-                }`,
+          display: `${smBreakpointUp ? 'block' : 'flex'}`,
+          justifyContent: `${smBreakpointUp ? 'block' : 'center'}`,
+          flexDirection: `${smBreakpointUp ? 'block' : 'column'}`,
+          alignItems: `${smBreakpointUp ? 'block' : 'center'}`,
         }}
       >
         {smBreakpointUp ? (
@@ -253,7 +245,7 @@ function Agentur() {
               borderBottomRightRadius: `${mdBreakpointDown ? '30px' : '0'}`,
               borderTopRightRadius: `${mdBreakpointDown ? '30px' : '0'}`,
             }}
-            image="https://www.youtube.com/embed/muuK4SpRR5M"
+            // image="https://www.youtube.com/embed/muuK4SpRR5M"
           />
         </Box>
         <Box
