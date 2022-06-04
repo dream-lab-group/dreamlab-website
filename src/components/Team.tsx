@@ -18,9 +18,9 @@ function Team() {
       sx={{
         position: 'relative',
         height: `${
-          mdBreakpointUp ? '50rem' : smBreakpointUp ? '60rem' : '150rem'
+          mdBreakpointUp ? '50rem' : smBreakpointUp ? '60rem' : '195rem'
         }`,
-        background: `${mdBreakpointDown ? "#F8F8F8" :  "none" }`
+        background: `${mdBreakpointDown ? '#F8F8F8' : 'none'}`,
       }}
     >
       {/* Polygon */}
@@ -43,7 +43,7 @@ function Team() {
           zIndex: -4,
           background: '#F8F8F8 ',
           position: 'absolute',
-          top: '-45rem', /* Distance to upper div */
+          top: '-45rem' /* Distance to upper div */,
         }}
       />
       {/* Team Text */}
@@ -98,18 +98,48 @@ function Team() {
         </p>
       )}
       {/* Content */}
-      <Box
-        sx={{
-          position: 'absolute',
-          top: `${lgBreakpointUp ? '2rem' : smBreakpointUp ? '12rem' : '2rem'}`,
-          left: `${lgBreakpointUp ? '11rem' : smBreakpointUp ? '5rem' : '25%'}`,
-        }}
-      >
-        <p style={{ fontSize: '18px', fontWeight: 'bold' }}>
-          Aufgestellt und motiviert
-        </p>
-        <Members />
-      </Box>
+      {lgBreakpointUp ? (
+        <Box
+          sx={{
+            position: 'absolute',
+            top: '2rem',
+            left: '11rem',
+          }}
+        >
+          <p style={{ fontSize: '18px', fontWeight: 'bold' }}>
+            Aufgestellt und motiviert
+          </p>
+          <Members />
+        </Box>
+      ) : smBreakpointUp ? (
+        <Box
+          sx={{
+            position: 'absolute',
+            top: '12rem',
+            left: '5rem',
+          }}
+        >
+          <p style={{ fontSize: '18px', fontWeight: 'bold' }}>
+            Aufgestellt und motiviert
+          </p>
+          <Members />
+        </Box>
+      ) : (
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+          }}
+        >
+          <p style={{ fontSize: '18px', fontWeight: 'bold', marginTop: `${smBreakpointDown ? "3rem" : "0"}` }}>
+            Aufgestellt und motiviert
+          </p>
+          <Members />
+        </Box>
+      )}
     </Box>
   )
 }

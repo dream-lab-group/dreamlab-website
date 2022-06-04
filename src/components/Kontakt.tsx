@@ -32,6 +32,8 @@ function Kontakt() {
       <Box
         sx={{
           width: `${lgBreakpointUp ? '30%' : '100%'}`,
+          marginRight: `${lgBreakpointUp ? '4rem' : '0'}`,
+          marginBottom: `${lgBreakpointUp ? '0' : '4rem'}`,
         }}
       >
         <h1 style={{ color: '#D770FF' }}>Kontaktiere uns!</h1>
@@ -50,7 +52,7 @@ function Kontakt() {
               mdBreakpointUp ? '23rem' : smBreakpointUp ? '30rem' : '28rem'
             }`,
             width: `${
-              mdBreakpointUp ? '42rem' : smBreakpointUp ? '37rem' : '23rem'
+              mdBreakpointUp ? '42rem' : smBreakpointUp ? '35rem' : '23rem'
             }`,
             borderRadius: '1.25rem',
             display: 'flex',
@@ -62,7 +64,7 @@ function Kontakt() {
           <Box
             sx={{
               width: `${
-                mdBreakpointUp ? '40rem' : smBreakpointUp ? '35rem' : '21rem'
+                mdBreakpointUp ? '40rem' : smBreakpointUp ? '33rem' : '21rem'
               }`,
               display: 'flex',
               flexDirection: `${mdBreakpointDown ? 'column' : 'row'}`,
@@ -77,7 +79,7 @@ function Kontakt() {
               required
               sx={{
                 width: `${
-                  mdBreakpointUp ? '14rem' : smBreakpointUp ? '35rem' : '21rem'
+                  mdBreakpointUp ? '14rem' : smBreakpointUp ? '33rem' : '21rem'
                 }`,
               }}
             />
@@ -89,7 +91,7 @@ function Kontakt() {
               required
               sx={{
                 width: `${
-                  mdBreakpointUp ? '25rem' : smBreakpointUp ? '35rem' : '21rem'
+                  mdBreakpointUp ? '25rem' : smBreakpointUp ? '33rem' : '21rem'
                 }`,
               }}
             />
@@ -103,7 +105,7 @@ function Kontakt() {
             required
             sx={{
               width: `${
-                mdBreakpointUp ? '40rem' : smBreakpointUp ? '35rem' : '21rem'
+                mdBreakpointUp ? '40rem' : smBreakpointUp ? '33rem' : '21rem'
               }`,
             }}
           />

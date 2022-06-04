@@ -20,7 +20,6 @@ function Agentur() {
       id="agentur"
       sx={{ margin: `${smBreakpointUp ? '4rem 0 4rem 0' : 0}` }}
     >
-      {' '}
       {/* Agentur - Top Part */}
       <Box>
         {smBreakpointUp ? (
@@ -495,8 +494,7 @@ function Agentur() {
         }}
       >
         <Box>
-          {/* Why Iframe: https://smartdevpreneur.com/four-examples-of-material-ui-cardmedia/ */}
-          {/*         <CardMedia
+          <CardMedia
             component="iframe"
             style={{
               height: `${
@@ -522,13 +520,13 @@ function Agentur() {
                   : '18rem'
               }`,
               border: 'none',
-              borderBottomLeftRadius: '43px',
-              borderTopLeftRadius: '43px',
-              borderBottomRightRadius: `${mdBreakpointDown ? '43px' : '0'}`,
-              borderTopRightRadius: `${mdBreakpointDown ? '43px' : '0'}`,
+              borderBottomLeftRadius: `${mdBreakpointDown ? '30px' : '43px'}`,
+              borderTopLeftRadius: `${mdBreakpointDown ? '30px' : '43px'}`,
+              borderBottomRightRadius: `${mdBreakpointDown ? '30px' : '0'}`,
+              borderTopRightRadius: `${mdBreakpointDown ? '30px' : '0'}`,
             }}
             image="https://www.youtube.com/embed/muuK4SpRR5M"
-          /> */}
+          />
         </Box>
         <Box
           sx={{
