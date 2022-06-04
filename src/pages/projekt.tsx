@@ -32,7 +32,7 @@ function Projekt() {
     <>
       <Box>
         <Navigation />
-        <Box>
+        <Box sx={{overflow:"hidden"}}>
           {/* Upper Part */}
           <Box
             sx={{
@@ -53,7 +53,7 @@ function Projekt() {
                   lgBreakpointUp ? '3rem' : mdBreakpointUp ? '.5rem' : '0'
                 }`,
                 position: `${mdBreakpointDown ? 'absolute' : 'relative'}`,
-                right: `${mdBreakpointDown ? '-1.5rem' : '0'}`,
+                right: `${mdBreakpointDown ? '1rem' : '0'}`,
                 top: `${mdBreakpointDown ? '5rem' : '0'}`,
                 zIndex: `${mdBreakpointDown ? '-4' : '3'}`,
               }}
@@ -68,9 +68,6 @@ function Projekt() {
                     ? '25rem'
                     : '23rem'
                 }`}
-                /*                 height={`${
-                  mdBreakpointUp ? '31rem' : smBreakpointUp ? '19rem' : '15rem'
-                }`} */
                 height="auto"
                 viewBox="0 0 657 573"
                 fill="none"
@@ -679,7 +676,7 @@ function Projekt() {
                     : '18rem'
                 }`,
                 border: 'none',
-                borderRadius: '43px',
+                borderRadius: `${mdBreakpointDown ? '30px' : '43px'}`,
               }}
               image="https://www.youtube.com/embed/muuK4SpRR5M"
             />
@@ -741,8 +738,8 @@ function Projekt() {
                           position: 'absolute',
                           top: '-2rem',
                           border: '18px solid #D770FF',
-                          height: '6rem',
-                          width: '6rem',
+                          height: "6rem",
+                          width: "6rem",
                           borderRadius: '50%',
                           background: 'white',
                         }}
@@ -1254,9 +1251,9 @@ function Projekt() {
                         sx={{
                           position: 'absolute',
                           top: '-2rem',
-                          border: '18px solid #D770FF',
-                          height: '6rem',
-                          width: '6rem',
+                          border: '12px solid #D770FF',
+                          height: '5rem',
+                          width: '5rem',
                           borderRadius: '50%',
                           background: 'white',
                         }}
@@ -1406,9 +1403,9 @@ function Projekt() {
                         sx={{
                           position: 'absolute',
                           top: '-2rem',
-                          border: '18px solid #BC27F6',
-                          height: '6rem',
-                          width: '6rem',
+                          border: '12px solid #BC27F6',
+                          height: '5rem',
+                          width: '5rem',
                           borderRadius: '50%',
                           background: 'white',
                         }}
@@ -1591,9 +1588,9 @@ function Projekt() {
                         sx={{
                           position: 'absolute',
                           top: '-2rem',
-                          border: '18px solid #7514F5',
-                          height: '6rem',
-                          width: '6rem',
+                          border: '12px solid #7514F5',
+                          height: '5rem',
+                          width: '5rem',
                           borderRadius: '50%',
                           background: 'white',
                         }}
@@ -1766,7 +1763,7 @@ function Projekt() {
                 {/* First Item */}
                 <Box
                   sx={{
-                    height: '40rem',
+                    height: '32rem',
                     width: '21rem',
                     borderRadius: '21px',
                     boxShadow: 3,
@@ -1789,9 +1786,9 @@ function Projekt() {
                         sx={{
                           position: 'absolute',
                           top: '-2rem',
-                          border: '18px solid #D770FF',
-                          height: '6rem',
-                          width: '6rem',
+                          border: '9px solid #D770FF',
+                          height: '4rem',
+                          width: '4rem',
                           borderRadius: '50%',
                           background: 'white',
                         }}
@@ -1933,9 +1930,9 @@ function Projekt() {
                         sx={{
                           position: 'absolute',
                           top: '-2rem',
-                          border: '18px solid #BC27F6',
-                          height: '6rem',
-                          width: '6rem',
+                          border: '9px solid #BC27F6',
+                          height: '4rem',
+                          width: '4rem',
                           borderRadius: '50%',
                           background: 'white',
                         }}
@@ -2109,9 +2106,9 @@ function Projekt() {
                         sx={{
                           position: 'absolute',
                           top: '-2rem',
-                          border: '18px solid #7514F5',
-                          height: '6rem',
-                          width: '6rem',
+                          border: '9px solid #7514F5',
+                          height: '4rem',
+                          width: '4rem',
                           borderRadius: '50%',
                           background: 'white',
                         }}
@@ -2413,9 +2410,9 @@ function Projekt() {
                 position: 'absolute',
                 left: '-2rem',
                 top: '3rem',
-                border: '18px solid #7514F5',
-                height: '6rem',
-                width: '6rem',
+                border: '12px solid #7514F5',
+                height: '5rem',
+                width: '5rem',
                 borderRadius: '50%',
                 background: 'white',
               }}
@@ -2544,9 +2541,9 @@ function Projekt() {
                 position: 'absolute',
                 left: '-2rem',
                 top: '2rem',
-                border: '18px solid #7514F5',
-                height: '6rem',
-                width: '6rem',
+                border: '9px solid #7514F5',
+                height: '4rem',
+                width: '4rem',
                 borderRadius: '50%',
                 background: 'white',
               }}

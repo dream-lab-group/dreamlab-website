@@ -5,6 +5,8 @@ import Link from 'next/link'
 /* Assets */
 import application from '../assets/application.png'
 import applicationFull from '../assets/applicationFull.png'
+import bgAbout from '../assets/_agentur-bg-lg.png'
+import bgAboutSmall from '../assets/_agentur-bg-sm.png'
 
 function Agentur() {
   const theme = useTheme()
@@ -21,7 +23,22 @@ function Agentur() {
       sx={{ margin: `${smBreakpointUp ? '4rem 0 4rem 0' : 0}` }}
     >
       {/* Agentur - Top Part */}
-      <Box>
+      <Box
+        sx={{
+            display: `${
+                  smBreakpointUp ? 'block' : "flex"
+                }`,
+            justifyContent: `${
+                  smBreakpointUp ? 'block' : "center"
+                }`,
+                flexDirection: `${
+                  smBreakpointUp ? 'block' : "column"
+                }`,
+                alignItems: `${
+                  smBreakpointUp ? 'block' : "center"
+                }`,
+        }}
+      >
         {smBreakpointUp ? (
           <Box
             sx={{
@@ -53,17 +70,20 @@ function Agentur() {
               justifyContent: 'center',
             }}
           >
-            <Box
-              className="polygonsmall"
-              sx={{
-                width: '100%',
-                background: '#192D3E',
-                height: '40rem',
-                zIndex: '-1',
-                position: 'absolute',
-                top: 0,
-              }}
-            />
+            <svg
+              width="1500"
+              height="auto"
+              viewBox="0 0 375 185"
+              fill="fill"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ zIndex: '-100' }}
+            >
+              <path
+                d="M-0.5 0.5H375V184.5L-0.5 159.5L-0.5 0.5Z"
+                fill="#192D3E"
+              />
+            </svg>
+
             <Box
               sx={{
                 width: '300px',
@@ -86,13 +106,14 @@ function Agentur() {
         {/* Application Text */}
         <Box
           sx={{
-            width: `${smBreakpointUp ? '35%' : '75%'}`,
-            display: 'flex',
+            width: `${smBreakpointDown ? '18rem' : '30rem'}`,
+            marginLeft: `${smBreakpointDown ? '0' : '5rem'}`,
+            /*             margin: '5rem 5rem 0 5rem',
+             */ display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
-            marginLeft: '10%',
             fontSize: `${smBreakpointUp ? '14px' : '18px'}`,
-            paddingTop: `${smBreakpointUp ? '0' : '25rem'}`,
+            paddingTop: `${smBreakpointUp ? '0' : '7rem'}`,
           }}
         >
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</h1>
@@ -114,7 +135,7 @@ function Agentur() {
               variant="contained"
               href="#team"
               sx={{
-                width: '140px',
+                width: `${smBreakpointUp ? '140px' : '120px'}`,
                 height: '45px',
                 backgroundImage: `linear-gradient(to bottom, #AD23F6 3.51%, #7E17F6 74.06%)`,
                 borderRadius: '100px',
@@ -127,7 +148,7 @@ function Agentur() {
               variant="contained"
               href="#team"
               sx={{
-                width: '140px',
+                width: `${smBreakpointUp ? '140px' : '120px'}`,
                 height: '45px',
                 ml: '2rem',
                 bgcolor: '#DADADA',
@@ -148,331 +169,38 @@ function Agentur() {
       <Box
         sx={{
           position: 'relative',
-          height: `${
-            xlBreakpointUp
-              ? '70rem'
-              : lgBreakpointUp
-              ? '60rem'
-              : mdBreakpointUp
-              ? '40rem'
-              : smBreakpointUp
-              ? '42rem'
-              : '42rem'
-          }`,
           zIndex: -2,
         }}
       >
-        {/* Polygon */}
-        <Box
-          className="polygon"
-          sx={{
-            height: `${
-              xlBreakpointUp
-                ? '100rem'
-                : lgBreakpointUp
-                ? '90rem'
-                : mdBreakpointUp
-                ? '60rem'
-                : smBreakpointUp
-                ? '60rem'
-                : '60rem'
-            }`,
-            width: '100%',
-            background: '#192D3E',
-          }}
-        />
-        {/* Circles */}
-        {xlBreakpointUp ? (
-          <svg
-            style={{ position: 'absolute', top: '29%' }}
-            width="600"
-            height="852"
-            viewBox="0 0 744 852"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="84"
-              cy="503"
-              r="120.5"
-              stroke="#0C1D2B"
-              strokeWidth="33"
+        <Box>
+          {smBreakpointUp ? (
+            <Image src={bgAbout} layout="responsive" alt="Image Application" />
+          ) : (
+            <Image
+              src={bgAboutSmall}
+              layout="responsive"
+              alt="Image Application"
             />
-            <circle
-              cx="479.5"
-              cy="728.5"
-              r="107"
-              stroke="#0C1D2B"
-              strokeWidth="33"
-            />
-            <circle
-              cx="275"
-              cy="137"
-              r="120.5"
-              stroke="#0C1D2B"
-              strokeWidth="33"
-            />
-            <circle
-              cx="631.5"
-              cy="311.5"
-              r="96"
-              stroke="#0C1D2B"
-              strokeWidth="33"
-            />
-            <circle
-              cx="383"
-              cy="462"
-              r="79.5"
-              stroke="url(#paint0_linear_178_2359)"
-              strokeWidth="33"
-            />
-            <circle
-              cx="545.5"
-              cy="62.5"
-              r="50"
-              stroke="url(#paint1_linear_178_2359)"
-              strokeWidth="25"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_178_2359"
-                x1="309.5"
-                y1="350"
-                x2="422.5"
-                y2="548.5"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#BC27F6" />
-                <stop offset="1" stopColor="#7514F5" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_178_2359"
-                x1="497.648"
-                y1="-10.4167"
-                x2="571.216"
-                y2="118.815"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#BC27F6" />
-                <stop offset="1" stopColor="#7514F5" />
-              </linearGradient>
-            </defs>
-          </svg>
-        ) : lgBreakpointUp ? (
-          <svg
-            style={{ position: 'absolute', top: '25%' }}
-            width="500"
-            height="852"
-            viewBox="0 0 744 852"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="84"
-              cy="503"
-              r="120.5"
-              stroke="#0C1D2B"
-              strokeWidth="33"
-            />
-            <circle
-              cx="479.5"
-              cy="728.5"
-              r="107"
-              stroke="#0C1D2B"
-              strokeWidth="33"
-            />
-            <circle
-              cx="275"
-              cy="137"
-              r="120.5"
-              stroke="#0C1D2B"
-              strokeWidth="33"
-            />
-            <circle
-              cx="631.5"
-              cy="311.5"
-              r="96"
-              stroke="#0C1D2B"
-              strokeWidth="33"
-            />
-            <circle
-              cx="383"
-              cy="462"
-              r="79.5"
-              stroke="url(#paint0_linear_178_2359)"
-              strokeWidth="33"
-            />
-            <circle
-              cx="545.5"
-              cy="62.5"
-              r="50"
-              stroke="url(#paint1_linear_178_2359)"
-              strokeWidth="25"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_178_2359"
-                x1="309.5"
-                y1="350"
-                x2="422.5"
-                y2="548.5"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#BC27F6" />
-                <stop offset="1" stopColor="#7514F5" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_178_2359"
-                x1="497.648"
-                y1="-10.4167"
-                x2="571.216"
-                y2="118.815"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#BC27F6" />
-                <stop offset="1" stopColor="#7514F5" />
-              </linearGradient>
-            </defs>
-          </svg>
-        ) : mdBreakpointUp ? (
-          <svg
-            style={{ position: 'absolute', top: '35%' }}
-            width="350"
-            height="454"
-            viewBox="0 0 425 454"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="73" cy="269" r="63" stroke="#0C1D2B" strokeWidth="20" />
-            <path
-              d="M339 388C339 419 314.08 444 283.5 444C252.92 444 228 419 228 388C228 357 252.92 332 283.5 332C314.08 332 339 357 339 388Z"
-              stroke="#0C1D2B"
-              strokeWidth="20"
-            />
-            <circle cx="175" cy="73" r="63" stroke="#0C1D2B" strokeWidth="20" />
-            <path
-              d="M415 166.5C415 194.469 392.536 217 365 217C337.464 217 315 194.469 315 166.5C315 138.531 337.464 116 365 116C392.536 116 415 138.531 415 166.5Z"
-              stroke="#0C1D2B"
-              strokeWidth="20"
-            />
-            <path
-              d="M274 246.5C274 268.684 255.606 287ß 232.5 287C209.394 287 191 268.684 191 246.5C191 224.316 209.394 206 232.5 206C255.606 206 274 224.316 274 246.5Z"
-              stroke="url(#paint0_linear_179_2360)"
-              strokeWidth="20"
-            />
-            <path
-              d="M345.5 33.5C345.5 48.5042 333.544 60.5 319 60.5C304.456 60.5 292.5 48.5042 292.5 33.5C292.5 18.4958 304.456 6.5 319 6.5C333.544 6.5 345.5 18.4958 345.5 33.5Z"
-              stroke="url(#paint1_linear_179_2360)"
-              strokeWidth="13"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_179_2360"
-                x1="193.07"
-                y1="187.583"
-                x2="251.913"
-                y2="292.995"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#BC27F6" />
-                <stop offset="1" stopColor="#7514F5" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_179_2360"
-                x1="293.734"
-                y1="-5.58333"
-                x2="333.467"
-                y2="63.1711"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#BC27F6" />
-                <stop offset="1" stopColor="#7514F5" />
-              </linearGradient>
-            </defs>
-          </svg>
-        ) : (
-          <svg
-            style={{ position: 'absolute', top: '33%' }}
-            width="300"
-            height="431"
-            viewBox="0 0 355 431"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="46"
-              cy="113"
-              r="39.5"
-              stroke="#0C1D2B"
-              strokeWidth="13"
-            />
-            <circle
-              cx="258.5"
-              cy="379.5"
-              r="35"
-              stroke="#0C1D2B"
-              strokeWidth="13"
-            />
-            <circle
-              cx="228"
-              cy="46"
-              r="39.5"
-              stroke="#0C1D2B"
-              strokeWidth="13"
-            />
-            <circle
-              cx="317"
-              cy="151"
-              r="31.5"
-              stroke="#0C1D2B"
-              strokeWidth="13"
-            />
-            <path
-              d="M109.5 399.5C109.5 413.699 97.575 425.5 82.5 425.5C67.425 425.5 55.5 413.699 55.5 399.5C55.5 385.301 67.425 373.5 82.5 373.5C97.575 373.5 109.5 385.301 109.5 399.5Z"
-              stroke="url(#paint0_linear_179_2361)"
-              strokeWidth="11"
-            />
-            <circle
-              cx="177"
-              cy="130"
-              r="17"
-              stroke="url(#paint1_linear_179_2361)"
-              strokeWidth="8"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_179_2361"
-                x1="57.6172"
-                y1="362.75"
-                x2="94.0954"
-                y2="428.863"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#BC27F6" />
-                <stop offset="1" stopColor="#7514F5" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_179_2361"
-                x1="160.922"
-                y1="105.5"
-                x2="185.641"
-                y2="148.922"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#BC27F6" />
-                <stop offset="1" stopColor="#7514F5" />
-              </linearGradient>
-            </defs>
-          </svg>
-        )}
+          )}
+        </Box>
         {/* Text */}
         <Box
           sx={{
             color: 'white',
-            width: `${mdBreakpointDown ? '18rem' : '28rem'}`,
+            width: `${
+              mdBreakpointDown ? '18rem' : xlBreakpointUp ? '35rem' : '20rem'
+            }`,
             position: 'absolute',
-            left: `${smBreakpointDown ? '5%' : lgBreakpointUp ? '50%' : '50%'}`,
-            top: '55%',
+            left: `${
+              smBreakpointDown
+                ? '11%'
+                : lgBreakpointUp
+                ? '60%'
+                : mdBreakpointUp
+                ? '52%'
+                : '50%'
+            }`,
+            top: '35%',
           }}
         >
           <h1 style={{ color: '#D770FF' }}>Warum dream lab</h1>

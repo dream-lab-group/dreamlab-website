@@ -9,6 +9,7 @@ import {
 
 function Kontakt() {
   const theme = useTheme()
+  const smBreakpointDown = useMediaQuery(theme.breakpoints.down('sm'))
   const smBreakpointUp = useMediaQuery(theme.breakpoints.up('sm'))
   const mdBreakpointDown = useMediaQuery(theme.breakpoints.down('md'))
   const mdBreakpointUp = useMediaQuery(theme.breakpoints.up('md'))
@@ -26,14 +27,13 @@ function Kontakt() {
         justifyContent: 'center',
         alignContent: 'space-between',
         flexDirection: `${lgBreakpointUp ? 'row' : 'column'}`,
-        padding: '0 4rem 0 4rem',
+        padding: '0 5rem 0 5rem',
       }}
     >
       <Box
         sx={{
-          width: `${lgBreakpointUp ? '30%' : '100%'}`,
-          marginRight: `${lgBreakpointUp ? '4rem' : '0'}`,
-          marginBottom: `${lgBreakpointUp ? '0' : '4rem'}`,
+          width: `${lgBreakpointUp ? '30%' : smBreakpointDown ? "140%" : '100%'}`,
+          margin: `${lgBreakpointUp ? '0 4rem 0 0' : '0 0 4rem 0'}`,
         }}
       >
         <h1 style={{ color: '#D770FF' }}>Kontaktiere uns!</h1>
@@ -52,7 +52,7 @@ function Kontakt() {
               mdBreakpointUp ? '23rem' : smBreakpointUp ? '30rem' : '28rem'
             }`,
             width: `${
-              mdBreakpointUp ? '42rem' : smBreakpointUp ? '35rem' : '23rem'
+              mdBreakpointUp ? '42rem' : smBreakpointUp ? '35rem' /* ? xsBreakpointUp : "50rem"  */: '21rem'
             }`,
             borderRadius: '1.25rem',
             display: 'flex',
@@ -64,7 +64,7 @@ function Kontakt() {
           <Box
             sx={{
               width: `${
-                mdBreakpointUp ? '40rem' : smBreakpointUp ? '33rem' : '21rem'
+                mdBreakpointUp ? '40rem' : smBreakpointUp ? '33rem' : '19rem'
               }`,
               display: 'flex',
               flexDirection: `${mdBreakpointDown ? 'column' : 'row'}`,
@@ -79,7 +79,7 @@ function Kontakt() {
               required
               sx={{
                 width: `${
-                  mdBreakpointUp ? '14rem' : smBreakpointUp ? '33rem' : '21rem'
+                  mdBreakpointUp ? '14rem' : smBreakpointUp ? '33rem' : '19rem'
                 }`,
               }}
             />
@@ -91,7 +91,7 @@ function Kontakt() {
               required
               sx={{
                 width: `${
-                  mdBreakpointUp ? '25rem' : smBreakpointUp ? '33rem' : '21rem'
+                  mdBreakpointUp ? '25rem' : smBreakpointUp ? '33rem' : '19rem'
                 }`,
               }}
             />
@@ -105,7 +105,7 @@ function Kontakt() {
             required
             sx={{
               width: `${
-                mdBreakpointUp ? '40rem' : smBreakpointUp ? '33rem' : '21rem'
+                mdBreakpointUp ? '40rem' : smBreakpointUp ? '33rem' : '19rem'
               }`,
             }}
           />
