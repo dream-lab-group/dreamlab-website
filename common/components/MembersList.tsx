@@ -4,56 +4,55 @@ import Image from 'next/image'
 const Members = () => {
   const theme = useTheme()
   const smBreakpointDown = useMediaQuery(theme.breakpoints.down('sm'))
-  const smBreakpointUp = useMediaQuery(theme.breakpoints.up('sm'))
   const mdBreakpointUp = useMediaQuery(theme.breakpoints.up('md'))
   const lgBreakpointUp = useMediaQuery(theme.breakpoints.up('lg'))
 
   const data = [
     {
       key: 1,
-      image: '/assets/team/nikola.png',
+      image: '/team/nikola.png',
       name: 'Nikola Vucic',
       role: 'Game Artist',
     },
     {
       key: 2,
-      image: '/assets/team/hadrian.png',
+      image: '/team/hadrian.png',
       name: 'Hadrian Chio',
       role: 'Web Developer',
     },
     {
       key: 3,
-      image: '/assets/team/michel.png',
+      image: '/team/michel.png',
       name: 'Michel Weber',
       role: 'VFX Artist',
     },
     {
       key: 4,
-      image: '/assets/team/jasmin.png',
+      image: '/team/jasmin.png',
       name: 'Jasmin Fischli',
       role: 'Web Designer',
     },
     {
       key: 5,
-      image: '/assets/team/claudio.png',
+      image: '/team/claudio.png',
       name: 'Claudio Mühle',
       role: 'Film Producer',
     },
     {
       key: 6,
-      image: '/assets/team/sarah.png',
+      image: '/team/sarah.png',
       name: 'Sarah Candolfi',
       role: 'Web Developer',
     },
     {
       key: 7,
-      image: '/assets/team/manu.png',
+      image: '/team/manu.png',
       name: 'Manuela Pfister',
       role: 'VFX Artist',
     },
     {
       key: 8,
-      image: '/assets/team/fiona.png',
+      image: '/team/fiona.png',
       name: 'Fiona Hilpertshauser',
       role: 'Web Designer',
     },
@@ -65,6 +64,7 @@ const Members = () => {
         <Grid
           spacing={0}
           direction="column"
+          container
           alignItems="center"
           justifyContent="center"
           sx={{
@@ -101,8 +101,8 @@ const Members = () => {
                 <Grid
                   position="relative"
                   style={{
-                    height: '11rem',
-                    width: '11rem',
+                    height: `${lgBreakpointUp ? "15rem" : "11rem"}`,
+                    width: `${lgBreakpointUp ? "15rem" : "11rem"}`,
                   }}
                 >
                   <Image

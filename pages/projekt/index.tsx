@@ -51,7 +51,7 @@ function Projekt() {
                   lgBreakpointUp ? '3rem' : mdBreakpointUp ? '.5rem' : '0'
                 }`,
                 position: `${mdBreakpointDown ? 'absolute' : 'relative'}`,
-                right: `${mdBreakpointDown ? '1rem' : '0'}`,
+                right: `${mdBreakpointDown ? '-1rem' : '0'}`,
                 top: `${mdBreakpointDown ? '5rem' : '0'}`,
                 zIndex: `${mdBreakpointDown ? '-4' : '3'}`,
               }}
@@ -309,7 +309,7 @@ function Projekt() {
               </svg>
             </Box>
             {/* Text - Right Side */}
-            <Box>
+            <Box sx={{width:"60%", position: `${mdBreakpointDown ? "absolute" : "box"}`, top: `${mdBreakpointDown ? "5rem" : "0"}`}}>
               <h1>
                 <span
                   style={{
@@ -365,20 +365,20 @@ function Projekt() {
             </Box>
           </Box>
           {/* Middle Part */}
-          <Box sx={{ position: 'relative' }}>
+          <Box sx={{ position: 'relative', width:"100vw" }}>
             {/* Polygon */}
             <Box
               className="polygonProject"
               sx={{
                 background: '#192D3E',
-                width: '100%',
+                width: '100vw',
                 /*                 height: '60rem',
                  */ height: `${mdBreakpointDown ? '125rem' : '60rem'}`,
                 zIndex: '-1',
                 position: 'absolute',
                 top: '-10rem',
               }}
-            ></Box>
+            />
             {/* Text */}
             <Box
               sx={{
@@ -386,14 +386,14 @@ function Projekt() {
                 justifyContent: 'center',
                 flexDirection: 'column',
                 alignItems: 'center',
-                width: '100vw',
+                width: '100%',
               }}
             >
               <h1
                 style={{
                   color: '#BC27F6',
                   marginBottom: '5rem',
-                  width: '60%',
+                  width: '80%',
                 }}
               >
                 Investieren Sie mit uns in die Weiterentwicklung und Vernetzung
@@ -561,7 +561,18 @@ function Projekt() {
           {/* Video Part */}
           <Box
             sx={{
-              height: '75rem',
+              height:`${
+                  xlBreakpointUp
+                    ? '50rem'
+                    : lgBreakpointUp
+                    ? '50rem'
+                    : mdBreakpointUp
+                    ? '45rem'
+                    : smBreakpointUp
+                    ? '45rem'
+                    : '35rem'
+                }`,
+                marginTop:"10rem",
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
@@ -580,7 +591,7 @@ function Projekt() {
                   ? '900'
                   : smBreakpointUp
                   ? '650'
-                  : '370'
+                  : '450'
               }`}
               /*                 height={`${
                                       lgBreakpointUp ? '1050' : mdBreakpointUp ? "850" : smBreakpointUp ? '450' : '650'
@@ -676,7 +687,7 @@ function Projekt() {
                 border: 'none',
                 borderRadius: `${mdBreakpointDown ? '30px' : '43px'}`,
               }}
-              // image="https://www.youtube.com/embed/muuK4SpRR5M"
+              image="https://www.youtube.com/embed/muuK4SpRR5M"
             />
           </Box>
           {/* Prices */}
@@ -2650,8 +2661,8 @@ function Projekt() {
             </Box>
           </Box>
         )}
-        <Kontakt />
       </Box>
+      <Kontakt />
     </>
   )
 }

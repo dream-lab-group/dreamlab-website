@@ -31,6 +31,7 @@ a {
   overflow-x: hidden !important;
 }
 
+/*
 .polygon {
   clip-path: polygon(100% 21%, 100% 73%, 0 68%, 0 25%);
 }
@@ -38,6 +39,7 @@ a {
 .polygonsmall {
   clip-path: polygon(100% 0, 100% 56%, 0 49%, 0 0);
 }
+*/
 
 .teamPoly {
   clip-path: polygon(100% 51%, 100% 100%, 0 100%, 0 45%);

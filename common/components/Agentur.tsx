@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 /* Assets */
-import application from '../assets/application.png'
-import applicationFull from '../assets/applicationFull.png'
-import bgAbout from '../assets/_agentur-bg-lg.png'
-import bgAboutSmall from '../assets/_agentur-bg-sm.png'
+import application from '../../public/agentur/application.png'
+import applicationFull from '../../public/agentur/applicationFull.png'
+import bgAbout from '../../public/agentur/agentur-bg-lg.png'
+import bgAboutSmall from '../../public/agentur/agentur-bg-sm.png'
 
 function Agentur() {
   const theme = useTheme()
@@ -46,6 +46,7 @@ function Agentur() {
             }}
           >
             <Image
+            priority
               src={application}
               layout="fill"
               objectFit="fill"
@@ -64,7 +65,6 @@ function Agentur() {
           >
             <svg
               width="1500"
-              height="auto"
               viewBox="0 0 375 185"
               fill="fill"
               xmlns="http://www.w3.org/2000/svg"

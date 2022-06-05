@@ -4,16 +4,16 @@ import { Box, useMediaQuery, useTheme } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logo from '../../assets/dreamlab-logo.png'
+import logo from "../../../public/dreamlab-logo.png"
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { Globals } from '../Utilities/utils'
 import { NavigationButton } from './Navigation-Button'
 import { MobileNavigationButton } from './Mobile-Navigation-Button'
+import { Globals } from '../Utilities/Utils'
 
 function Navigation() {
   const theme = useTheme()
-  const smBreakpointUp = useMediaQuery(theme.breakpoints.up('sm'))
+  const mdBreakpointUp = useMediaQuery(theme.breakpoints.up('md'))
 
   const [hamburgerOpen, setHamburgerOpen] = useState(false)
 
@@ -21,15 +21,18 @@ function Navigation() {
     setHamburgerOpen(!hamburgerOpen)
   }
 
-  if (hamburgerOpen === true) {
-    document.documentElement.style.overflow = 'hidden'
-  } else {
-    document.documentElement.style.overflow = 'scroll'
+  if(typeof window !== "undefined"){
+      if (hamburgerOpen === true) {
+            document.documentElement.style.overflow = 'hidden'
+          } else {
+            document.documentElement.style.overflow = 'scroll'
+          }
   }
+
 
   return (
     <Box sx={{ position: 'relative', height: '6rem', width: '100%' }}>
-      {smBreakpointUp ? (
+      {mdBreakpointUp ? (
         <Box
           sx={{
             width: '100%',
@@ -114,6 +117,7 @@ function Navigation() {
             >
               {Globals.navigationElements.map((navElement) => (
                 <MobileNavigationButton
+                key={navElement}
                   navElement={navElement}
                   setHamburgerOpen={setHamburgerOpen}
                 />

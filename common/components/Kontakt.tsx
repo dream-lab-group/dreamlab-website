@@ -34,7 +34,7 @@ function Kontakt() {
       <Box
         sx={{
           width: `${
-            lgBreakpointUp ? '30%' : smBreakpointDown ? '140%' : '100%'
+            lgBreakpointUp ? '30%' : smBreakpointDown ? '130%' : '100%'
           }`,
           margin: `${lgBreakpointUp ? '0 4rem 0 0' : '0 0 4rem 0'}`,
         }}
