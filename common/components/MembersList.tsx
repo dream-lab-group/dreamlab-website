@@ -72,7 +72,7 @@ const Members = () => {
           }}
         >
           {data.map((member) => (
-            <Grid container item md={1} key={member.key}>
+            <Grid container item xs={1} key={member.key}> 
               <Grid item>
                 <Grid
                   position="relative"

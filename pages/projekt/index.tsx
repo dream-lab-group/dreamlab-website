@@ -37,8 +37,7 @@ function Projekt() {
               height: '35rem',
               width: '100%',
               display: 'flex',
-              /*               justifyContent: 'space-around',
-               */ alignItems: 'center',
+              alignItems: 'center',
               justifyContent: `${mdBreakpointUp ? 'space-around' : 'center'}`,
               flexDirection: `${smBreakpointUp ? 'row' : 'row-reverse'}`,
               position: 'relative',
@@ -48,10 +47,19 @@ function Projekt() {
             <Box
               sx={{
                 marginRight: `${
-                  lgBreakpointUp ? '3rem' : mdBreakpointUp ? '.5rem' : '0'
+                  lgBreakpointUp ? '5rem' : mdBreakpointUp ? '2rem' : '0'
+                }`,
+                marginLeft: `${
+                  xlBreakpointUp
+                    ? '10rem'
+                    : lgBreakpointUp
+                    ? '7rem'
+                    : mdBreakpointUp
+                    ? '4rem'
+                    : '0'
                 }`,
                 position: `${mdBreakpointDown ? 'absolute' : 'relative'}`,
-                right: `${mdBreakpointDown ? '-1rem' : '0'}`,
+                right: `${mdBreakpointDown ? '-3rem' : '0'}`,
                 top: `${mdBreakpointDown ? '5rem' : '0'}`,
                 zIndex: `${mdBreakpointDown ? '-4' : '3'}`,
               }}
@@ -61,7 +69,7 @@ function Projekt() {
                   lgBreakpointUp
                     ? '40rem'
                     : mdBreakpointUp
-                    ? '32rem'
+                    ? '30rem'
                     : smBreakpointUp
                     ? '25rem'
                     : '23rem'
@@ -309,7 +317,13 @@ function Projekt() {
               </svg>
             </Box>
             {/* Text - Right Side */}
-            <Box sx={{width:"60%", position: `${mdBreakpointDown ? "absolute" : "box"}`, top: `${mdBreakpointDown ? "5rem" : "0"}`}}>
+            <Box
+              sx={{
+                width: '60%',
+                position: `${mdBreakpointDown ? 'absolute' : 'box'}`,
+                top: `${mdBreakpointDown ? '3rem' : '0'}`,
+              }}
+            >
               <h1>
                 <span
                   style={{
@@ -365,7 +379,7 @@ function Projekt() {
             </Box>
           </Box>
           {/* Middle Part */}
-          <Box sx={{ position: 'relative', width:"100vw" }}>
+          <Box sx={{ position: 'relative', width: '100vw' }}>
             {/* Polygon */}
             <Box
               className="polygonProject"
@@ -561,18 +575,18 @@ function Projekt() {
           {/* Video Part */}
           <Box
             sx={{
-              height:`${
-                  xlBreakpointUp
-                    ? '50rem'
-                    : lgBreakpointUp
-                    ? '50rem'
-                    : mdBreakpointUp
-                    ? '45rem'
-                    : smBreakpointUp
-                    ? '45rem'
-                    : '35rem'
-                }`,
-                marginTop:"10rem",
+              height: `${
+                xlBreakpointUp
+                  ? '50rem'
+                  : lgBreakpointUp
+                  ? '50rem'
+                  : mdBreakpointUp
+                  ? '45rem'
+                  : smBreakpointUp
+                  ? '45rem'
+                  : '35rem'
+              }`,
+              marginTop: '10rem',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
@@ -580,8 +594,6 @@ function Projekt() {
           >
             <svg
               style={{ position: 'absolute', zIndex: '-2' }}
-              /*             width="1448"
-                                height="1050" */
               width={`${
                 xlBreakpointUp
                   ? '1448'
@@ -593,9 +605,6 @@ function Projekt() {
                   ? '650'
                   : '450'
               }`}
-              /*                 height={`${
-                                      lgBreakpointUp ? '1050' : mdBreakpointUp ? "850" : smBreakpointUp ? '450' : '650'
-                                    }`} */
               height="auto"
               viewBox="0 0 1598 1050"
               fill="none"
@@ -684,10 +693,11 @@ function Projekt() {
                     ? '33rem'
                     : '18rem'
                 }`,
+                boxShadow: '0px 4px 38px -4px rgba(0, 0, 0, 0.2)',
                 border: 'none',
                 borderRadius: `${mdBreakpointDown ? '30px' : '43px'}`,
               }}
-              image="https://www.youtube.com/embed/muuK4SpRR5M"
+              image="https://www.youtube.com/embed/u31qwQUeGuM"
             />
           </Box>
           {/* Prices */}
@@ -809,6 +819,21 @@ function Projekt() {
                           style={{ marginRight: '1rem' }}
                         />
                         <p>Auswahl von max. 5 bestehenden Funktionen</p>
+                      </Box>
+                      {/* Item */}
+                      <Box
+                        sx={{
+                          width: '18rem',
+                          display: 'flex',
+                          flexDirection: 'row',
+                          alignItems: 'center',
+                        }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          style={{ marginRight: '1rem' }}
+                        />
+                        <p>Maximale Nutzeranzahl 500</p>
                       </Box>
                       {/* Item */}
                       <Box
@@ -968,6 +993,21 @@ function Projekt() {
                           icon={faCheck}
                           style={{ marginRight: '1rem' }}
                         />
+                        <p>Maximale Nutzeranzahl von 1&apos;000</p>
+                      </Box>
+                      {/* Item */}
+                      <Box
+                        sx={{
+                          width: '18rem',
+                          display: 'flex',
+                          flexDirection: 'row',
+                          alignItems: 'center',
+                        }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          style={{ marginRight: '1rem' }}
+                        />
                         <p>
                           Implementierung zusätzlicher Funktionen nach Absprache
                         </p>
@@ -1076,7 +1116,7 @@ function Projekt() {
                         }}
                       />
                       <h2 style={{ color: '#7514F5', marginLeft: '8rem' }}>
-                        Extended
+                        Unlimited
                       </h2>
                     </Box>
                     <Box
@@ -1165,7 +1205,7 @@ function Projekt() {
                           icon={faCheck}
                           style={{ marginRight: '1rem' }}
                         />
-                        <p>Optionaler Maintenance Contract</p>
+                        <p>Individuelle Anzahl an Nutzern</p>
                       </Box>
                       {/* Item */}
                       <Box
@@ -1330,6 +1370,21 @@ function Projekt() {
                       </Box>
                       {/* Row */}
                       <Box>
+                        {/* Item */}
+                        <Box
+                          sx={{
+                            width: '18rem',
+                            display: 'flex',
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                          }}
+                        >
+                          <FontAwesomeIcon
+                            icon={faCheck}
+                            style={{ marginRight: '1rem' }}
+                          />
+                          <p>Maximale Nutzeranzahl 500</p>
+                        </Box>
                         {/* Item */}
                         <Box
                           sx={{
@@ -1528,6 +1583,21 @@ function Projekt() {
                             icon={faCheck}
                             style={{ marginRight: '1rem' }}
                           />
+                          <p>Maximale Nutzeranzahl von 1&apos;000</p>
+                        </Box>
+                        {/* Item */}
+                        <Box
+                          sx={{
+                            width: '18rem',
+                            display: 'flex',
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                          }}
+                        >
+                          <FontAwesomeIcon
+                            icon={faCheck}
+                            style={{ marginRight: '1rem' }}
+                          />
                           <p>Inkl. 1 Jahr Maintenance Contract</p>
                         </Box>
                         {/* Item */}
@@ -1605,7 +1675,7 @@ function Projekt() {
                         }}
                       />
                       <h2 style={{ color: '#7514F5', marginLeft: '8rem' }}>
-                        Light
+                        Unlimited
                       </h2>
                     </Box>
                     {/* Box of Items */}
@@ -1700,7 +1770,7 @@ function Projekt() {
                             icon={faCheck}
                             style={{ marginRight: '1rem' }}
                           />
-                          <p>Optionaler Maintenance Contract</p>
+                          <p>Individuelle Anzahl an Nutzern</p>
                         </Box>
                         {/* Item */}
                         <Box
@@ -1857,6 +1927,21 @@ function Projekt() {
                           style={{ marginRight: '1rem' }}
                         />
                         <p>Auswahl von max. 5 bestehenden Funktionen</p>
+                      </Box>
+                      {/* Item */}
+                      <Box
+                        sx={{
+                          width: '18rem',
+                          display: 'flex',
+                          flexDirection: 'row',
+                          alignItems: 'center',
+                        }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          style={{ marginRight: '1rem' }}
+                        />
+                        <p>Maximale Nutzeranzahl 500</p>
                       </Box>
                       {/* Item */}
                       <Box
@@ -2047,6 +2132,21 @@ function Projekt() {
                           icon={faCheck}
                           style={{ marginRight: '1rem' }}
                         />
+                        <p>Maximale Nutzeranzahl von 1&apos;000</p>
+                      </Box>
+                      {/* Item */}
+                      <Box
+                        sx={{
+                          width: '18rem',
+                          display: 'flex',
+                          flexDirection: 'row',
+                          alignItems: 'center',
+                        }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          style={{ marginRight: '1rem' }}
+                        />
                         <p>Inkl. 1 Jahr Maintenance Contract</p>
                       </Box>
                       {/* Item */}
@@ -2123,7 +2223,7 @@ function Projekt() {
                         }}
                       />
                       <h2 style={{ color: '#7514F5', marginLeft: '8rem' }}>
-                        Light
+                        Unlimited
                       </h2>
                     </Box>
                     <Box
@@ -2211,7 +2311,7 @@ function Projekt() {
                           icon={faCheck}
                           style={{ marginRight: '1rem' }}
                         />
-                        <p>Optionaler Maintenance Contract</p>
+                        <p>Individuelle Anzahl an Nutzern</p>
                       </Box>
                       {/* Item */}
                       <Box

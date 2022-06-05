@@ -1,4 +1,5 @@
 import { Box, CardMedia, useMediaQuery, useTheme, Button } from '@mui/material'
+import shadows from '@mui/material/styles/shadows'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -20,25 +21,25 @@ function Agentur() {
   return (
     <Box
       id="agentur"
-      sx={{ margin: `${smBreakpointUp ? '4rem 0 4rem 0' : 0}`, width: '100%' }}
+      sx={{ margin: `${mdBreakpointUp ? '4rem 0 4rem 0' : 0}`, width: '100%' }} /* Vorher smBreakpointUp */
     >
       {/* Agentur - Top Part */}
       <Box
         sx={{
-          display: `${smBreakpointUp ? 'block' : 'flex'}`,
-          justifyContent: `${smBreakpointUp ? 'block' : 'center'}`,
-          flexDirection: `${smBreakpointUp ? 'block' : 'column'}`,
-          alignItems: `${smBreakpointUp ? 'block' : 'center'}`,
+          display: `${mdBreakpointUp ? 'block' : 'flex'}`, /* Vorher smBreakpointUp */
+          justifyContent: `${mdBreakpointUp ? 'block' : 'center'}`, /* Vorher smBreakpointUp */
+          flexDirection: `${mdBreakpointUp ? 'block' : 'column'}`, /* Vorher smBreakpointUp */
+          alignItems: `${mdBreakpointUp ? 'block' : 'center'}`, /* Vorher smBreakpointUp */
         }}
       >
-        {smBreakpointUp ? (
+        {mdBreakpointUp ? (
           <Box
             sx={{
               width: `${
-                lgBreakpointUp ? '800px' : xlBreakpointUp ? '1000px' : '500px'
+                lgBreakpointUp ? '650px' : xlBreakpointUp ? '1000px' : '500px'
               }`,
               height: `${
-                lgBreakpointUp ? '586px' : xlBreakpointUp ? '733px' : '366px'
+                lgBreakpointUp ? '476px' : xlBreakpointUp ? '733px' : '366px'
               }`,
               position: 'absolute',
               right: 0,
@@ -239,13 +240,14 @@ function Agentur() {
                   ? '33rem'
                   : '18rem'
               }`,
+              boxShadow: "0px 4px 38px -4px rgba(0, 0, 0, 0.2)",
               border: 'none',
               borderBottomLeftRadius: `${mdBreakpointDown ? '30px' : '43px'}`,
               borderTopLeftRadius: `${mdBreakpointDown ? '30px' : '43px'}`,
               borderBottomRightRadius: `${mdBreakpointDown ? '30px' : '0'}`,
               borderTopRightRadius: `${mdBreakpointDown ? '30px' : '0'}`,
             }}
-            // image="https://www.youtube.com/embed/muuK4SpRR5M"
+            image="https://www.youtube.com/embed/u31qwQUeGuM"
           />
         </Box>
         <Box
