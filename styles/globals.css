@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html,
 body {
+  font-family: 'Outfit', sans-serif !important;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -13,4 +15,36 @@ a {
 
 * {
   box-sizing: border-box;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+/*
+.polygon {
+  clip-path: polygon(100% 21%, 100% 73%, 0 68%, 0 25%);
+}
+
+.polygonsmall {
+  clip-path: polygon(100% 0, 100% 56%, 0 49%, 0 0);
+}
+*/
+
+.teamPoly {
+  clip-path: polygon(100% 51%, 100% 100%, 0 100%, 0 45%);
+}
+
+.polygonProject {
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
 }
