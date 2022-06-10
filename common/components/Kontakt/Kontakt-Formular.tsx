@@ -7,45 +7,14 @@ import {
   useTheme,
 } from '@mui/material'
 
-function Kontakt() {
+export const KontaktFormular = () => {
   const theme = useTheme()
-  const smBreakpointDown = useMediaQuery(theme.breakpoints.down('sm'))
   const smBreakpointUp = useMediaQuery(theme.breakpoints.up('sm'))
   const mdBreakpointDown = useMediaQuery(theme.breakpoints.down('md'))
   const mdBreakpointUp = useMediaQuery(theme.breakpoints.up('md'))
-  const lgBreakpointUp = useMediaQuery(theme.breakpoints.up('lg'))
 
   return (
-    <Box
-      id="kontakt"
-      sx={{
-        background: '#192D3E',
-        color: 'white',
-        height: `${lgBreakpointUp ? '40rem' : '60rem'}`,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        alignContent: 'space-between',
-        flexDirection: `${lgBreakpointUp ? 'row' : 'column'}`,
-        padding: '0 5rem 0 5rem',
-        width: '100%',
-      }}
-    >
-      <Box
-        sx={{
-          width: `${
-            lgBreakpointUp ? '30%' : smBreakpointDown ? '130%' : '100%'
-          }`,
-          margin: `${lgBreakpointUp ? '0 4rem 0 0' : '0 0 4rem 0'}`,
-        }}
-      >
-        <h1 style={{ color: '#D770FF' }}>Kontaktiere uns!</h1>
-        <p>
-          Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </Box>
+    <>
       <FormControl sx={{ display: 'flex', alignItems: 'flex-end' }}>
         {/* Form */}
         <Box
@@ -132,8 +101,6 @@ function Kontakt() {
           SENDEN
         </Button>
       </FormControl>
-    </Box>
+    </>
   )
 }
-
-export default Kontakt
