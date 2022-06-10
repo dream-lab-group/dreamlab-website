@@ -1,4 +1,4 @@
-import { Box, useMediaQuery, useTheme } from '@mui/material'
+import { Box, Button, useMediaQuery, useTheme } from '@mui/material'
 import Image from 'next/image'
 
 /* Assets */
@@ -60,6 +60,19 @@ export const AgenturMiddle = () => {
             minim veniam, quis nostrud exercitation laboris nisi ut aliquip ex
             ea commodo consequat. Duis
           </p>
+          <Button
+            variant="contained"
+            href="#team"
+            sx={{
+              width: `${smBreakpointUp ? '140px' : '120px'}`,
+              height: '45px',
+              backgroundImage: `linear-gradient(to bottom, #AD23F6 3.51%, #7E17F6 74.06%)`,
+              borderRadius: '100px',
+              marginTop:"1rem"
+            }}
+          >
+            Team
+          </Button>
         </Box>
       </Box>
     </>

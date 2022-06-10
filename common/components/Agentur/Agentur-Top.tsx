@@ -137,7 +137,7 @@ export const AgenturTop = () => {
             </Button>
             <Button
               variant="contained"
-              href="#team"
+              href="#kontakt"
               sx={{
                 width: `${smBreakpointUp ? '140px' : '120px'}`,
                 height: '45px',

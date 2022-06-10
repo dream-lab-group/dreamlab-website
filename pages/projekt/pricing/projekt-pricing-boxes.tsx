@@ -15,7 +15,7 @@ export const ProjektPricingBoxes = () => {
       content: [
         'Implementierung der Grundplattform',
         'Individuelle Anpassungen am Look',
-        'Auswahl von max. 5 bestehenden Funktionen',
+        'Auswahl von max. 1 Modul',
         'Maximale Nutzeranzahl 500',
         'Optionale kostenpflichtige Funktions-Updates',
         'Optionaler Maintenance Contract',
@@ -27,7 +27,7 @@ export const ProjektPricingBoxes = () => {
       content: [
         'Implementierung der Grundplattform',
         'Individuelle Anpassungen am Look',
-        'Auswahl von max. 10 bestehenden Funktionen',
+        'Auswahl von max. 3 Modul',
         "Maximale Nutzeranzahl 1'000",
         'Implementierung zusätzlicher Funktionen nach Absprache',
         'Design und Animation eines eigenen Maskottchens',
@@ -41,7 +41,7 @@ export const ProjektPricingBoxes = () => {
       content: [
         'Implementierung der Grundplattform',
         'Individuelle Anpassungen am Look inkl. Maskottchen',
-        'Unlimitierte Auswahl an bestehenden Funktionen',
+        'Unlimitierte Auswahl an Modulen',
         'Entwicklung und Implementierung individueller Funktionen',
         'Individuelle Anzahl an Nutzern',
         'Inkl. 1 Jahr Maintenance Contract',
@@ -56,7 +56,7 @@ export const ProjektPricingBoxes = () => {
       contentFirstRow: [
         'Implementierung der Grundplattform',
         'Individuelle Anpassungen am Look',
-        'Auswahl von max. 5 bestehenden Funktionen',
+        'Auswahl von max. 1 Modul',
       ],
       contentSecondRow: [
         'Maximale Nutzeranzahl 500',
@@ -70,7 +70,7 @@ export const ProjektPricingBoxes = () => {
       contentFirstRow: [
         'Implementierung der Grundplattform',
         'Individuelle Anpassungen am Look',
-        'Auswahl von max. 10 bestehenden Funktionen',
+        'Auswahl von max. 3 Modul',
         "Maximale Nutzeranzahl 1'000",
       ],
       contentSecondRow: [
@@ -86,7 +86,7 @@ export const ProjektPricingBoxes = () => {
       contentFirstRow: [
         'Implementierung der Grundplattform',
         'Individuelle Anpassungen am Look inkl. Maskottchen',
-        'Unlimitierte Auswahl an bestehenden Funktionen',
+        'Unlimitierte Auswahl an Modulen',
         'Entwicklung und Implementierung individueller Funktionen',
       ],
       contentSecondRow: [
