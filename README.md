@@ -26,16 +26,16 @@
 
 <br>
 
-## 🎯 About
+## :dart: About
 
 <p>This is part of a bachelor project on behalf of the SAE Institute in Zurich.</p>
 <p>Get to know our Agency Dream Lab and our vision for a tight-knit local community. </p>
 
-## ✅ Screenshots
+## :white_check_mark: Screenshots
 
 <img src="./public/landingpage.png" width="900"/>
 
-## 🚀 Technologies
+## :rocket: Technology
 
 The following tools were used in this project:
 
@@ -43,12 +43,12 @@ The following tools were used in this project:
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 
-## 🏁 Information
+## :checkered_flag: Information
 
 Before starting ✅, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 Install all dependencies with npm init. Check package.json to see what the dependencies are.
 
-## 📝 License
+## :memo: License
 
 This project is under license from MIT.
 
