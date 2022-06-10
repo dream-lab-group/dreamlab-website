@@ -19,6 +19,7 @@
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#white_check_mark-screenshots">Screenshots</a> &#xa0; | &#xa0;
+  <a href="#rocket">Technology</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-information">Information</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/sarcan" target="_blank">Author</a>
