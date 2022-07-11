@@ -2,6 +2,7 @@ import { Box } from '@mui/material'
 import Head from 'next/head'
 import Footer from './Footer'
 import Navigation from './Navigation/Navigation'
+import { ScrollToTop } from './BackToTop'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -20,6 +21,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <Box sx={{ width: '100%' }}>
         <main className="main-container">{children}</main>
       </Box>
+      <ScrollToTop />
       <Footer />
     </>
   )

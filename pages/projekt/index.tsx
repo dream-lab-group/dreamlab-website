@@ -10,6 +10,7 @@ import { ProjektMiddle } from './middle/projekt-middle'
 import { ProjektPricing } from './pricing/projekt-pricing'
 import { ProjektVideo } from './video/projekt-video'
 import { Maintenance } from './maintenance/maintenance'
+import { ScrollToTop } from '../../common/components/BackToTop'
 function Projekt() {
   const theme = useTheme()
   const smBreakpointDown = useMediaQuery(theme.breakpoints.down('sm'))

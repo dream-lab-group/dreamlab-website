@@ -70,7 +70,7 @@ export const AgenturBottom = () => {
             ea commodo consequat.
           </p>
           <Link href="/projekt">
-            <p style={{ color: '#BC27F6' }}>mehr erfahren</p>
+            <p style={{ color: '#BC27F6', cursor:"pointer" }}>mehr erfahren</p>
           </Link>
         </Box>
       </Box>
