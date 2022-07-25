@@ -109,6 +109,7 @@ const Members = () => {
                     src={member.image}
                     alt="Image Application"
                     layout="fill"
+                    priority
                   />
                 </Grid>
                 <p style={{ fontWeight: 'bold' }}>{member.name}</p>

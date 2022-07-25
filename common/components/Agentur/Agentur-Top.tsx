@@ -2,8 +2,8 @@ import { Box, useMediaQuery, useTheme, Button } from '@mui/material'
 import Image from 'next/image'
 
 /* Assets */
-import application from '../../../public/agentur/application.png'
-import applicationFull from '../../../public/agentur/applicationFull.png'
+import application from '../../../public/agentur/application_.png'
+import applicationFull from '../../../public/agentur/application_.png'
 
 export const AgenturTop = () => {
   const theme = useTheme()
