@@ -49,43 +49,26 @@ a {
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
 }
 
-.light-border {
-      border: 18px solid #D770FF !important;
+.sai-plattform-border {
+  border: 18px solid #d770ff !important;
 }
 
-.light-color {
-            color: #D770FF;
+.sai-plattform-color {
+  color: #d770ff;
 }
 
-.light-bgolor {
-            background: #D770FF;
+.sai-plattform-bgolor {
+  background: #d770ff;
 }
 
-.extended-border {
-      border: 18px solid #BC27F6 !important;
+.developement-border {
+  border: 18px solid #bc27f6 !important;
 }
 
-.extended-color {
-            color: #BC27F6;
+.developement-color {
+  color: #bc27f6;
 }
 
-.extended-bgcolor {
-            background: #BC27F6;
-}
-
-.unlimited-border {
-      border: 18px solid #7514F5 !important;
-}
-
-.unlimited-color {
-            color: #7514F5
-}
-
-.unlimited-bgcolor {
-            background: #7514F5
-}
-
-.extended-size, .unlimited-size {
-      height: 40rem;
-      margin-top: 10rem;
+.developement-bgcolor {
+  background: #bc27f6;
 }

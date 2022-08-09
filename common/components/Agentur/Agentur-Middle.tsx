@@ -55,10 +55,9 @@ export const AgenturMiddle = () => {
         >
           <h1 style={{ color: '#D770FF' }}>Warum dream lab</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad
-            minim veniam, quis nostrud exercitation laboris nisi ut aliquip ex
-            ea commodo consequat. Duis
+            dream lab ist eine Gruppe aus engagierten und jungen Köpfen. Als
+            ehemalige Studierende wollen wir eine Plattform erstellen, wo
+            Studierende sich für Projekte finden und weiterentwickeln.
           </p>
           <Button
             variant="contained"
@@ -68,7 +67,7 @@ export const AgenturMiddle = () => {
               height: '45px',
               backgroundImage: `linear-gradient(to bottom, #AD23F6 3.51%, #7E17F6 74.06%)`,
               borderRadius: '100px',
-              marginTop:"1rem"
+              marginTop: '1rem',
             }}
           >
             Team

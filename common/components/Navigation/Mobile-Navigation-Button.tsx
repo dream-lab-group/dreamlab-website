@@ -34,8 +34,8 @@ export const MobileNavigationButton = ({
           href={`${
             navElement === 'Agentur'
               ? '/#agentur'
-              : navElement === 'Projekt'
-              ? '/projekt'
+              : navElement === 'Plattform'
+              ? '/plattform'
               : navElement === 'Team'
               ? '/#team'
               : '/#kontakt'

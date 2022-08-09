@@ -1,9 +1,9 @@
-import { Box, useMediaQuery, useTheme, Button } from '@mui/material'
+import { Box, Button, useMediaQuery, useTheme } from '@mui/material'
 import Image from 'next/image'
 
 /* Assets */
-import application from '../../../public/agentur/application_.png'
-import applicationFull from '../../../public/agentur/application_.png'
+import { default as application } from '../../../public/agentur/application.png'
+import applicationFull from '../../../public/agentur/applicationFull.png'
 
 export const AgenturTop = () => {
   const theme = useTheme()
@@ -17,32 +17,20 @@ export const AgenturTop = () => {
     <>
       <Box
         sx={{
-          display: `${
-            mdBreakpointUp ? 'block' : 'flex'
-          }` /* Vorher smBreakpointUp */,
-          justifyContent: `${
-            mdBreakpointUp ? 'block' : 'center'
-          }` /* Vorher smBreakpointUp */,
-          flexDirection: `${
-            mdBreakpointUp ? 'block' : 'column'
-          }` /* Vorher smBreakpointUp */,
-          alignItems: `${
-            mdBreakpointUp ? 'block' : 'center'
-          }` /* Vorher smBreakpointUp */,
+          display: `${mdBreakpointUp ? 'block' : 'flex'}`,
+          justifyContent: `${mdBreakpointUp ? 'block' : 'center'}`,
+          flexDirection: `${mdBreakpointUp ? 'block' : 'column'}`,
+          alignItems: `${mdBreakpointUp ? 'block' : 'center'}`,
         }}
       >
         {mdBreakpointUp ? (
           <Box
             sx={{
-              width: `${
-                lgBreakpointUp ? '650px' : xlBreakpointUp ? '1000px' : '500px'
-              }`,
-              height: `${
-                lgBreakpointUp ? '476px' : xlBreakpointUp ? '733px' : '366px'
-              }`,
+              height: '551px',
+              width: '478px',
               position: 'absolute',
               right: 0,
-              zIndex: '-1',
+              zIndex: '-5',
             }}
           >
             <Image
@@ -83,6 +71,7 @@ export const AgenturTop = () => {
                 position: 'absolute',
                 top: 45,
                 zIndex: '-1',
+                borderRadius: '50%',
               }}
             >
               <Image
@@ -98,7 +87,9 @@ export const AgenturTop = () => {
         {/* Application Text */}
         <Box
           sx={{
-            width: `${smBreakpointDown ? '18rem' : '30rem'}`,
+            width: `${
+              smBreakpointDown ? '18rem' : lgBreakpointUp ? '30rem' : '20rem'
+            }`,
             marginLeft: `${smBreakpointDown ? '0' : '5rem'}`,
             display: 'flex',
             flexDirection: 'column',
@@ -107,11 +98,11 @@ export const AgenturTop = () => {
             paddingTop: `${smBreakpointUp ? '0' : '7rem'}`,
           }}
         >
-          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</h1>
+          <h1>Die Community-Plattform für Bildungsinstitute</h1>
           <p>
-            Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            ut aliquip ex ea commodo consequat. Duis
+            Unsere Plattform bietet Schulen aller Stufen die Möglichkeit ihren
+            Studierenden einen geschützten Raum zur Vernsetzung und
+            Kollaboration zur Verfügung zu stellen.
           </p>
           {/* Buttons */}
           <Box
@@ -124,7 +115,7 @@ export const AgenturTop = () => {
           >
             <Button
               variant="contained"
-              href="#team"
+              href="/plattform"
               sx={{
                 width: `${smBreakpointUp ? '140px' : '120px'}`,
                 height: '45px',
@@ -133,7 +124,7 @@ export const AgenturTop = () => {
                 marginRight: '1rem',
               }}
             >
-              Team
+              Plattform
             </Button>
             <Button
               variant="contained"

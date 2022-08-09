@@ -3,7 +3,7 @@ export class Globals {
 
   public static readonly navigationElements = [
     'Agentur',
-    'Projekt',
+    'Plattform',
     'Team',
     'Kontakt',
   ]
