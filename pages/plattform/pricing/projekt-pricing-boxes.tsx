@@ -170,7 +170,6 @@ const PlattformPricingBoxes = () => {
                     : ''
                 }
                 sx={{
-                  background: '#D770FF',
                   width: '100%',
                   height: '5rem',
                   borderBottomLeftRadius: '21px',
@@ -325,7 +324,6 @@ const PlattformPricingBoxes = () => {
                     : ''
                 }
                 sx={{
-                  background: '#D770FF',
                   width: '100%',
                   height: '5rem',
                   borderBottomLeftRadius: '21px',
@@ -452,7 +450,6 @@ const PlattformPricingBoxes = () => {
                     : ''
                 }
                 sx={{
-                  background: '#D770FF',
                   width: '100%',
                   height: '5rem',
                   borderBottomLeftRadius: '21px',

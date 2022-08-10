@@ -58,7 +58,7 @@ a {
 }
 
 .sai-plattform-bgolor {
-  background: #d770ff;
+  background: #d770ff !important;
 }
 
 .developement-border {
@@ -70,5 +70,5 @@ a {
 }
 
 .developement-bgcolor {
-  background: #bc27f6;
+  background: #bc27f6 !important;
 }
