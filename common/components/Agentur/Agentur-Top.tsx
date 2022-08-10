@@ -101,8 +101,8 @@ export const AgenturTop = () => {
           <h1>Die Community-Plattform für Bildungsinstitute</h1>
           <p>
             Unsere Plattform bietet Schulen aller Stufen die Möglichkeit ihren
-            Studierenden einen geschützten Raum zur Vernsetzung und
-            Kollaboration zur Verfügung zu stellen.
+            Studierenden einen geschützten Raum zur Vernetzung und Kollaboration
+            zur Verfügung zu stellen.
           </p>
           {/* Buttons */}
           <Box
