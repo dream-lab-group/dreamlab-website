@@ -61,7 +61,7 @@ export const PlattformVideo = () => {
             border: 'none',
             borderRadius: `${mdBreakpointDown ? '30px' : '43px'}`,
           }}
-          image="https://www.youtube.com/embed/u31qwQUeGuM"
+          image="https://www.youtube.com/embed/d1zdpbH4iEI"
         />
       </Box>
     </>
