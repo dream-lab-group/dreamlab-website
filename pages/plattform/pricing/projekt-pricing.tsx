@@ -1,7 +1,7 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material'
-import { PlattformPricingBoxes } from './projekt-pricing-boxes'
+import PlattformPricingBoxes from './projekt-pricing-boxes'
 
-export const PlattformPricing = () => {
+const PlattformPricing = () => {
   const theme = useTheme()
   const mdBreakpointDown = useMediaQuery(theme.breakpoints.down('md'))
 
@@ -29,3 +29,4 @@ export const PlattformPricing = () => {
     </>
   )
 }
+export default PlattformPricing

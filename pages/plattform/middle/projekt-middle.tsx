@@ -1,7 +1,7 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material'
-import { PlattformMiddleBoxes } from './projekt-middle-boxes'
+import PlattformMiddleBoxes from './projekt-middle-boxes'
 
-export const PlattformMiddle = () => {
+const PlattformMiddle = () => {
   const theme = useTheme()
   const mdBreakpointDown = useMediaQuery(theme.breakpoints.down('md'))
 
@@ -55,3 +55,5 @@ export const PlattformMiddle = () => {
     </>
   )
 }
+
+export default PlattformMiddle

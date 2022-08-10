@@ -1,7 +1,7 @@
 import { Box, Button, useMediaQuery, useTheme } from '@mui/material'
-import { PlattformTopSVG } from './projekt-top-svg'
+import PlattformTopSVG from './projekt-top-svg'
 
-export const PlattformTop = () => {
+const PlattformTop = () => {
   const theme = useTheme()
   const smBreakpointDown = useMediaQuery(theme.breakpoints.down('sm'))
   const smBreakpointUp = useMediaQuery(theme.breakpoints.up('sm'))
@@ -112,3 +112,5 @@ export const PlattformTop = () => {
     </>
   )
 }
+
+export default PlattformTop

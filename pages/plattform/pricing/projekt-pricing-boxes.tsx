@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Box, useMediaQuery, useTheme } from '@mui/material'
 import Link from 'next/link'
 
-export const PlattformPricingBoxes = () => {
+const PlattformPricingBoxes = () => {
   const theme = useTheme()
   const mdBreakpointUp = useMediaQuery(theme.breakpoints.up('md'))
   const lgBreakpointUp = useMediaQuery(theme.breakpoints.up('lg'))
@@ -484,3 +484,5 @@ export const PlattformPricingBoxes = () => {
     </>
   )
 }
+
+export default PlattformPricingBoxes

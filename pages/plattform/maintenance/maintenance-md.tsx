@@ -1,9 +1,9 @@
 import { Box } from '@mui/material'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const MaintenanceMd = () => {
+const MaintenanceMd = () => {
   return (
     <>
       <Box
@@ -124,3 +124,5 @@ export const MaintenanceMd = () => {
     </>
   )
 }
+
+export default MaintenanceMd

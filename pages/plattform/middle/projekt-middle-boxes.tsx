@@ -4,7 +4,7 @@ import portfolio from '../../../public/plattform/portfolio.png'
 import teilen from '../../../public/plattform/teilen.png'
 import vernetzen from '../../../public/plattform/vernetzen.png'
 
-export const PlattformMiddleBoxes = () => {
+const PlattformMiddleBoxes = () => {
   const theme = useTheme()
   const mdBreakpointDown = useMediaQuery(theme.breakpoints.down('md'))
   const mdBreakpointUp = useMediaQuery(theme.breakpoints.up('md'))
@@ -94,3 +94,4 @@ export const PlattformMiddleBoxes = () => {
     </>
   )
 }
+export default PlattformMiddleBoxes

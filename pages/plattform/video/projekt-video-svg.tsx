@@ -1,6 +1,6 @@
 import { useMediaQuery, useTheme } from '@mui/material'
 
-export const PlattformVideoSVG = () => {
+const PlattformVideoSVG = () => {
   const theme = useTheme()
   const smBreakpointUp = useMediaQuery(theme.breakpoints.up('sm'))
   const mdBreakpointUp = useMediaQuery(theme.breakpoints.up('md'))
@@ -57,3 +57,4 @@ export const PlattformVideoSVG = () => {
     </>
   )
 }
+export default PlattformVideoSVG

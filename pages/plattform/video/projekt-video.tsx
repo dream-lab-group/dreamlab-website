@@ -1,7 +1,7 @@
 import { Box, CardMedia, useMediaQuery, useTheme } from '@mui/material'
-import { PlattformVideoSVG } from './projekt-video-svg'
+import PlattformVideoSVG from './projekt-video-svg'
 
-export const PlattformVideo = () => {
+const PlattformVideo = () => {
   const theme = useTheme()
   const smBreakpointUp = useMediaQuery(theme.breakpoints.up('sm'))
   const mdBreakpointDown = useMediaQuery(theme.breakpoints.down('md'))
@@ -67,3 +67,4 @@ export const PlattformVideo = () => {
     </>
   )
 }
+export default PlattformVideo
