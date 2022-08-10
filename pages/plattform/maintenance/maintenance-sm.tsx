@@ -1,7 +1,5 @@
 import { Box } from '@mui/material'
-
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { BsCheck2 } from 'react-icons/bs'
 
 const MaintenanceSm = () => {
   return (
@@ -59,7 +57,7 @@ const MaintenanceSm = () => {
               alignItems: 'center',
             }}
           >
-            <FontAwesomeIcon icon={faCheck} style={{ marginRight: '1rem' }} />
+            <BsCheck2 style={{ marginRight: '1rem', fontSize: '1rem' }} />
             <p>Priorisierter Support</p>
           </Box>
           {/* Item */}
@@ -71,7 +69,7 @@ const MaintenanceSm = () => {
               alignItems: 'center',
             }}
           >
-            <FontAwesomeIcon icon={faCheck} style={{ marginRight: '1rem' }} />
+            <BsCheck2 style={{ marginRight: '1rem', fontSize: '1rem' }} />
             <p>Kostenlose Funktions-Updates</p>
           </Box>
           {/* Item */}
@@ -83,7 +81,7 @@ const MaintenanceSm = () => {
               alignItems: 'center',
             }}
           >
-            <FontAwesomeIcon icon={faCheck} style={{ marginRight: '1rem' }} />
+            <BsCheck2 style={{ marginRight: '1rem', fontSize: '1rem' }} />
             <p>Anpassungen Look</p>
           </Box>
           {/* Item */}
@@ -95,7 +93,7 @@ const MaintenanceSm = () => {
               alignItems: 'center',
             }}
           >
-            <FontAwesomeIcon icon={faCheck} style={{ marginRight: '1rem' }} />
+            <BsCheck2 style={{ marginRight: '1rem', fontSize: '1rem' }} />
             <p>Optionale Entwicklung neuer Funktionen nach Absprache</p>
           </Box>
           {/* Item */}
@@ -107,7 +105,7 @@ const MaintenanceSm = () => {
               alignItems: 'center',
             }}
           >
-            <FontAwesomeIcon icon={faCheck} style={{ marginRight: '1rem' }} />
+            <BsCheck2 style={{ marginRight: '1rem', fontSize: '1rem' }} />
             <p>
               Weiterentwicklung und Implementierung bestehender Funktionalitäten
             </p>

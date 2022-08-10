@@ -1,7 +1,6 @@
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Box, useMediaQuery, useTheme } from '@mui/material'
 import Link from 'next/link'
+import { BsCheck2 } from 'react-icons/bs'
 
 const PlattformPricingBoxes = () => {
   const theme = useTheme()
@@ -152,10 +151,7 @@ const PlattformPricingBoxes = () => {
                           alignItems: 'center',
                         }}
                       >
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          style={{ marginRight: '1rem' }}
-                        />
+                        <BsCheck2 size={20} style={{ marginRight: '.5rem' }} />
                         <p>{boxContent}</p>
                       </Box>
                     )
@@ -284,9 +280,9 @@ const PlattformPricingBoxes = () => {
                             alignItems: 'center',
                           }}
                         >
-                          <FontAwesomeIcon
-                            icon={faCheck}
-                            style={{ marginRight: '1rem' }}
+                          <BsCheck2
+                            size={20}
+                            style={{ marginRight: '.5rem' }}
                           />
                           <p>{boxContentFirstRow}</p>
                         </Box>
@@ -306,9 +302,9 @@ const PlattformPricingBoxes = () => {
                             alignItems: 'center',
                           }}
                         >
-                          <FontAwesomeIcon
-                            icon={faCheck}
-                            style={{ marginRight: '1rem' }}
+                          <BsCheck2
+                            size={20}
+                            style={{ marginRight: '.5rem' }}
                           />
                           <p>{boxContentSecondRow}</p>
                         </Box>
@@ -437,10 +433,7 @@ const PlattformPricingBoxes = () => {
                           alignItems: 'center',
                         }}
                       >
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          style={{ marginRight: '1rem' }}
-                        />
+                        <BsCheck2 size={20} style={{ marginRight: '.5rem' }} />
                         <p>{boxContent}</p>
                       </Box>
                     )

@@ -1,15 +1,13 @@
-import * as React from 'react'
-import { useState } from 'react'
 import { Box, useMediaQuery, useTheme } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logo from "../../../public/dreamlab-logo.png"
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { NavigationButton } from './Navigation-Button'
-import { MobileNavigationButton } from './Mobile-Navigation-Button'
+import { useState } from 'react'
+import { AiOutlineClose } from 'react-icons/ai'
+import { FaBars } from 'react-icons/fa'
+import logo from '../../../public/dreamlab-logo.png'
 import { Globals } from '../Utilities/Utils'
+import { MobileNavigationButton } from './Mobile-Navigation-Button'
+import { NavigationButton } from './Navigation-Button'
 
 function Navigation() {
   const theme = useTheme()
@@ -21,14 +19,13 @@ function Navigation() {
     setHamburgerOpen(!hamburgerOpen)
   }
 
-  if(typeof window !== "undefined"){
-      if (hamburgerOpen === true) {
-            document.documentElement.style.overflow = 'hidden'
-          } else {
-            document.documentElement.style.overflow = 'scroll'
-          }
+  if (typeof window !== 'undefined') {
+    if (hamburgerOpen === true) {
+      document.documentElement.style.overflow = 'hidden'
+    } else {
+      document.documentElement.style.overflow = 'scroll'
+    }
   }
-
 
   return (
     <Box sx={{ position: 'relative', height: '6rem', width: '100%' }}>
@@ -87,17 +84,9 @@ function Navigation() {
               onClick={toggleHamburger}
             >
               {hamburgerOpen ? (
-                <FontAwesomeIcon
-                  icon={faXmark}
-                  size="2x"
-                  style={{ cursor: 'pointer' }}
-                />
+                <AiOutlineClose size={30} style={{ cursor: 'pointer' }} />
               ) : (
-                <FontAwesomeIcon
-                  icon={faBars}
-                  size="2x"
-                  style={{ cursor: 'pointer' }}
-                />
+                <FaBars size={30} style={{ cursor: 'pointer' }} />
               )}
             </Box>
           </Box>
@@ -117,7 +106,7 @@ function Navigation() {
             >
               {Globals.navigationElements.map((navElement) => (
                 <MobileNavigationButton
-                key={navElement}
+                  key={navElement}
                   navElement={navElement}
                   setHamburgerOpen={setHamburgerOpen}
                 />

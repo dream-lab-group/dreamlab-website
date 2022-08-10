@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
 import { Box } from '@mui/system'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { useEffect, useState } from 'react'
+import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 
 export const ScrollToTop = () => {
   const [showTopBtn, setShowTopBtn] = useState(false)
@@ -22,14 +21,12 @@ export const ScrollToTop = () => {
   }
   return (
     <Box>
-      {' '}
       {showTopBtn && (
-        <FontAwesomeIcon
-          icon={faCircleArrowUp}
+        <BsFillArrowUpCircleFill
           style={{
             marginRight: '1rem',
             fontSize: '2rem',
-            color: "#AD23F6",
+            color: '#AD23F6',
             position: 'fixed',
             right: '1rem',
             bottom: '5rem',
@@ -38,7 +35,7 @@ export const ScrollToTop = () => {
           }}
           onClick={goToTop}
         />
-      )}{' '}
+      )}
     </Box>
   )
 }
