@@ -47,6 +47,7 @@ export const MobileNavigationButton = ({
               fontSize: '1.5rem',
               width: '100%',
             }}
+            className="fontfamily"
           >
             {navElement}
           </Typography>

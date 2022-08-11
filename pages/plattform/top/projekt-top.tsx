@@ -90,7 +90,7 @@ const PlattformTop = () => {
             </Button>
             <Button
               variant="contained"
-              href="/"
+              href="#kontakt"
               sx={{
                 width: '140px',
                 height: '45px',

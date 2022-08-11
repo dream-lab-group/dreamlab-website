@@ -1,8 +1,8 @@
 import {
-  FormControl,
-  TextField,
   Box,
   Button,
+  FormControl,
+  TextField,
   useMediaQuery,
   useTheme,
 } from '@mui/material'
@@ -89,7 +89,7 @@ export const KontaktFormular = () => {
         {/* Button */}
         <Button
           variant="contained"
-          href="/#team"
+          href="/"
           sx={{
             marginTop: '1rem',
             width: '140px',

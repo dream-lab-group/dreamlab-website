@@ -182,7 +182,7 @@ const PlattformPricingBoxes = () => {
                   cursor: 'pointer',
                 }}
               >
-                <Link href="/">
+                <Link href="/#kontakt">
                   <p>ANFRAGEN</p>
                 </Link>
               </Box>
@@ -336,7 +336,7 @@ const PlattformPricingBoxes = () => {
                   cursor: 'pointer',
                 }}
               >
-                <Link href="/">
+                <Link href="/#kontakt">
                   <p>ANFRAGEN</p>
                 </Link>
               </Box>
@@ -462,7 +462,7 @@ const PlattformPricingBoxes = () => {
                   cursor: 'pointer',
                 }}
               >
-                <Link href="/">
+                <Link href="/#kontakt">
                   <p>ANFRAGEN</p>
                 </Link>
               </Box>

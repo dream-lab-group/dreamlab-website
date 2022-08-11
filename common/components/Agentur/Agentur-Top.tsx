@@ -2,8 +2,8 @@ import { Box, Button, useMediaQuery, useTheme } from '@mui/material'
 import Image from 'next/image'
 
 /* Assets */
-import { default as application } from '../../../public/agentur/application.png'
-import applicationFull from '../../../public/agentur/applicationFull.png'
+import { default as application } from '../../../public/agentur/application.webp'
+import applicationFull from '../../../public/agentur/applicationFull.webp'
 
 export const AgenturTop = () => {
   const theme = useTheme()
@@ -123,6 +123,7 @@ export const AgenturTop = () => {
                 borderRadius: '100px',
                 marginRight: '1rem',
               }}
+              className="fontfamily"
             >
               Plattform
             </Button>
@@ -141,6 +142,7 @@ export const AgenturTop = () => {
                   background: '#DADADA',
                 },
               }}
+              className="fontfamily"
             >
               Kontakt
             </Button>

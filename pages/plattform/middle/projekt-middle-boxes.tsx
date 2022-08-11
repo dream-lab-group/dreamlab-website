@@ -1,8 +1,8 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material'
 import Image from 'next/image'
-import portfolio from '../../../public/plattform/portfolio.png'
-import teilen from '../../../public/plattform/teilen.png'
-import vernetzen from '../../../public/plattform/vernetzen.png'
+import portfolio from '../../../public/plattform/portfolio.webp'
+import teilen from '../../../public/plattform/teilen.webp'
+import vernetzen from '../../../public/plattform/vernetzen.webp'
 
 const PlattformMiddleBoxes = () => {
   const theme = useTheme()
@@ -23,7 +23,7 @@ const PlattformMiddleBoxes = () => {
       image: teilen,
       title: 'Teilen von Content',
       description:
-        'Die Studenten können unkomliziert ein eigenes Profil erstellen und ihre Projekte in einem geschützten Raum teilen und sich von anderen Arbeiten inspirieren lassen.',
+        'Die Studenten können unkompliziert ein eigenes Profil erstellen und ihre Projekte in einem geschützten Raum teilen und sich von anderen Arbeiten inspirieren lassen.',
     },
     {
       key: 2,

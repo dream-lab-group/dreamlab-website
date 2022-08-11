@@ -2,8 +2,8 @@ import { Box, Button, useMediaQuery, useTheme } from '@mui/material'
 import Image from 'next/image'
 
 /* Assets */
-import bgAbout from '../../../public/agentur/agentur-bg-lg.png'
-import bgAboutSmall from '../../../public/agentur/agentur-bg-sm.png'
+import bgAbout from '../../../public/agentur/agentur-bg-lg.webp'
+import bgAboutSmall from '../../../public/agentur/agentur-bg-sm.webp'
 
 export const AgenturMiddle = () => {
   const theme = useTheme()
@@ -17,9 +17,9 @@ export const AgenturMiddle = () => {
   return (
     <>
       <Box
+        id="agentur"
         sx={{
           position: 'relative',
-          zIndex: -2,
         }}
       >
         <Box>
@@ -68,7 +68,9 @@ export const AgenturMiddle = () => {
               backgroundImage: `linear-gradient(to bottom, #AD23F6 3.51%, #7E17F6 74.06%)`,
               borderRadius: '100px',
               marginTop: '1rem',
+              cursor: 'pointer',
             }}
+            className="fontfamily"
           >
             Team
           </Button>

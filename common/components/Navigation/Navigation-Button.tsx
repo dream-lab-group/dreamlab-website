@@ -31,7 +31,9 @@ export const NavigationButton = ({ navElement }: NavigationButtonProps) => {
               : '/#kontakt'
           }`}
         >
-          <Typography sx={{ paddingRight: '2em' }}>{navElement}</Typography>
+          <Typography sx={{ paddingRight: '2em' }} className="fontfamily">
+            {navElement}
+          </Typography>
         </Link>
       </ButtonBase>
     </>

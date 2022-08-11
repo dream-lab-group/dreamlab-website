@@ -1,8 +1,8 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material'
 
-import { AgenturTop } from './Agentur-Top'
-import { AgenturMiddle } from './Agentur-Middle'
 import { AgenturBottom } from './Agentur-Bottom'
+import { AgenturMiddle } from './Agentur-Middle'
+import { AgenturTop } from './Agentur-Top'
 
 function Agentur() {
   const theme = useTheme()
@@ -10,8 +10,10 @@ function Agentur() {
 
   return (
     <Box
-      id="agentur"
-      sx={{ margin: `${mdBreakpointUp ? '4rem 0 4rem 0' : 0}`, width: '100%' }} /* Vorher smBreakpointUp */
+      sx={{
+        margin: `${mdBreakpointUp ? '4rem 0 4rem 0' : 0}`,
+        width: '100%',
+      }} /* Vorher smBreakpointUp */
     >
       {/* Agentur - Top Part */}
       <AgenturTop />
